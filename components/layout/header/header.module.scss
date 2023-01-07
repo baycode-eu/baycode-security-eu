@@ -1,0 +1,52 @@
+@import "styles/colors.scss";
+@import "styles/layout.scss";
+
+
+.header {
+  justify-content: center;
+  align-items: center;
+  min-height:86px;
+  border-bottom: 1px solid $header-split;
+  display: flex;
+  flex-direction: column;
+  background-color: $black;
+}
+
+.headerContents {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: $max-width;
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.menuEntry:hover {
+  color: $accent;
+  cursor:pointer;
+
+}
+
+
+@media screen and (max-width: $max-width) {
+  .menu {
+    padding: 0px 32px 0 32px;
+  }
+}
+
+@media screen and (max-width:$mobile-width) {
+  .menu {
+    padding: 0px 8px 0 8px;
+  }
+}

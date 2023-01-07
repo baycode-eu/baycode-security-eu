@@ -1,0 +1,19 @@
+@import "./colors.scss";
+@import "./fonts.scss";
+
+body {
+  line-height: 1;
+  font-family: $font;
+  font-size: $font-size;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

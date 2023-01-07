@@ -1,0 +1,31 @@
+@import "styles/colors.scss";
+@import "styles/layout.scss";
+
+.logo {
+  font-size: 32px;
+  // padding: 6px 0 0 24px;
+  display:inline-block;
+  cursor:pointer;
+}
+
+
+@media screen and (max-width: $max-width) {
+  .logo {
+    padding: 0px 32px 0 32px;
+  }
+}
+
+@media screen and (max-width:$mobile-width) {
+  .logo {
+    padding: 0px 8px 0 8px;
+  }
+}
+
+.secondaryLogoText {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: $accent;
+  font-family:'Courier New', Courier, monospace;
+  float: right;
+}

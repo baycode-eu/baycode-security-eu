@@ -1,0 +1,71 @@
+@import "styles/colors";
+@import "styles/fonts";
+
+.button {
+  border: none;
+  background-color: red;
+  // neumorphism
+  border-radius: 8px;
+  background: $white;
+  box-shadow:  5px 5px 10px $white-neumorphic-darker,
+  -5px -5px 10px $white-neumorphic-brighter;
+
+  &.pressed {
+    background: $white;
+    box-shadow:  inset 5px 5px 10px $white-neumorphic-darker,
+    inset -5px -5px 10px $white-neumorphic-brighter;
+  }
+
+  min-width: 48px;
+  min-height: 48px;
+  font-size: $medium;
+  font-weight: bold;
+  padding: 12px;
+  color: $white-alternative-text;
+  z-index: 1;
+  cursor: pointer;
+
+  &.big {
+    height: 64px;
+    font-size:14px;
+    font-weight: bold;
+  }
+
+  &.accent {
+    color: $white-alternative;
+    // neumorphism
+    background: $accent;
+  }
+
+  &.primary {
+    color: $white-alternative;
+    background: $primary;
+  }
+
+  &.scroll {
+    color: red;
+  }
+
+  &.disabled {
+    opacity:0.5;
+    cursor: not-allowed;
+  }
+
+  &.loading {
+    opacity:0.5;
+    cursor: progress;
+  }
+
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+}

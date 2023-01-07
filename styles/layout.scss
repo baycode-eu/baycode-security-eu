@@ -1,0 +1,54 @@
+$site-width: 1280px;
+$mobile-width: 533px;
+
+$max-width: 1400px;
+$min-height: 160vh;
+
+.page {
+  width:100%;
+  min-height: $min-height;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pageContents {
+  max-width: $max-width;
+  width: 100%;
+}
+
+
+@media screen and (max-width: $max-width) {
+  .landing-tiles {
+    padding: 0px 32px 0 32px;
+  }
+}
+
+@media screen and (max-width:$mobile-width) {
+  .landing-tiles {
+    padding: 0px 8px 0 8px;
+  }
+}
+
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem;
+  min-height: 120vh;
+}
+
+.scroll-button {
+  position: fixed;
+  right: 64px;
+  bottom: 64px;
+}
+
+.hidden-desktop {
+  @media screen and (min-width: $mobile-width) {
+    display: none;
+  }
+}
+

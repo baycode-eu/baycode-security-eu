@@ -1,0 +1,40 @@
+@import "styles/colors";
+
+
+.textSection {
+  display: flex;
+  margin-top: 64px;
+  font-size: 16px;
+  line-height: 1.5rem;
+}
+
+@media screen and (max-width: 500px) {
+  .textSection {
+    flex-direction: column;
+  }
+}
+
+.imageSection {
+  flex-grow: 1;
+  flex-shrink: 1;
+  max-width: 90%;
+  height: 90%;
+  max-height: 600px;
+  object-fit: contain;
+}
+
+.left {
+  flex-basis: 100%;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.right {
+  flex-basis: 100%;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.page {
+  
+}
