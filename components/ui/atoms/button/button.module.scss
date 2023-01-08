@@ -2,13 +2,12 @@
 @import "styles/fonts";
 
 .button {
+  z-index: 1000;
   border: none;
   background-color: red;
   // neumorphism
   border-radius: 8px;
   background: $white;
-  box-shadow:  5px 5px 10px $white-neumorphic-darker,
-  -5px -5px 10px $white-neumorphic-brighter;
 
   &.pressed {
     background: $white;

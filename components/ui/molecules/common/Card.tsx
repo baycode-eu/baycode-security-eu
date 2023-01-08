@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import "../../../assets/styles/components/common/card.scss"
+import styles from "./card.module.scss"
 
 interface Props {
   title?: string
@@ -10,13 +10,15 @@ interface Props {
 const Card = (props: Props) => {
   const {children, title} = props;
 
-  return <div className="card">
-    <h2 className="title">
+  return <div className={[styles.card, ""].join(" ")}>
+    <><h2 className={styles.title}>
       {title}
     </h2>
-    <div className="contents">
+    <div className={styles.contents}>
       {children}
     </div>
+    </>
+    {/* <div className="caro-mask"></div> */}
   </div>
 }
 

@@ -1,0 +1,24 @@
+@import "styles/colors";
+@import "styles/layout";
+.card {
+  position: relative;
+
+  // background-color: #2168c4;
+  // box-shadow: #090912 0px 0px 24px;
+
+  .title {
+    font-size: 48px;
+    margin-bottom:24px;
+    line-height: 4rem;
+  }
+
+  @media screen and (max-width: $max-width) {
+    padding: 48px 16px;
+    box-shadow: none;
+
+  }
+  .contents {
+    font-size: 18px;
+    line-height: 2rem;
+  }
+}

@@ -2,7 +2,7 @@
 @import "styles/layout.scss";
 
 .logo {
-  font-size: 32px;
+  font-size: 42px;
   // padding: 6px 0 0 24px;
   display:inline-block;
   cursor:pointer;
@@ -17,12 +17,12 @@
 
 @media screen and (max-width:$mobile-width) {
   .logo {
-    padding: 0px 8px 0 8px;
+    padding: 8px 16px 0 16px;
   }
 }
 
 .secondaryLogoText {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   letter-spacing: 2px;
   color: $accent;

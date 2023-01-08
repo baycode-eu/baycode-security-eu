@@ -4,9 +4,9 @@ import Footer from "./footer/Footer";
 import { getYear } from "utils/dates";
 import ScrollButton from "components/ui/molecules/scrollButton/ScrollButton";
 
-export default  (props) => {
+export default (props) => {
   return <div className="layout">
-    <Header logoText="_baycode.eu" secondaryLogoText="security"/>
+    <Header logoText="_baycode.eu" secondaryLogoText="security" />
     <div className={`page`}>
       <div className="pageContents">
         {props.children}

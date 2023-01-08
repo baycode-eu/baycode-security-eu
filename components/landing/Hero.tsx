@@ -7,9 +7,8 @@ export default (props) => (
       _baycode.eu
     </h1>
     <ul className={styles.subtitle}>
-      <li>threats found
-        <div className={`${styles.threatsout}`}>threats out</div>
-      </li>
+      <li>{props.title}</li>
+      <li className={`${styles.threatsout}`}>{props.subtitle}</li>
     </ul>
     <ul className={styles.domain}>
       <li>🔍 Penetration Tests</li>

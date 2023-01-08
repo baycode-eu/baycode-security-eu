@@ -1,16 +1,19 @@
 @import "styles/colors";
-
+@import "styles/layout";
 
 .textSection {
   display: flex;
   margin-top: 64px;
+  gap: 32px;
   font-size: 16px;
   line-height: 1.5rem;
+  justify-content: space-between;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .textSection {
     flex-direction: column;
+    // padding: 16px;
   }
 }
 
@@ -18,20 +21,23 @@
   flex-grow: 1;
   flex-shrink: 1;
   max-width: 90%;
-  height: 90%;
+  height: 100%;
   max-height: 600px;
   object-fit: contain;
 }
 
 .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-basis: 100%;
-  flex-grow: 1;
-  flex-shrink: 1;
 }
 
 .right {
+  align-items: center;
+  justify-content: center;
+  display: flex;
   flex-basis: 100%;
-  flex-grow: 1;
   flex-shrink: 1;
 }
 

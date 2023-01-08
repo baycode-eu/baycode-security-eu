@@ -1,10 +1,8 @@
 import * as React from "react";
 import Layout from "components/layout/layout";
-import Hero from "components/landing/Hero";
 import styles from "./landing-page-template.module.scss";
 import Image from "next/image";
 import GetQuoteDevelopment from "components/landing/quote/GetQuoteDevelopment";
-
 
 export default (props) => {
   const {
@@ -16,11 +14,11 @@ export default (props) => {
     welcomeDevelopedApplicationsSecurityImage,
     hero,
     getQuote,
-    stack,
     welcomeSoftwareEngineering,
     welcomeSoftwareEngineeringImage,
     blogCarousel,
-    stackRef
+    welcomeSoarSiemImage,
+    welcomeSoarSiem
   } = props
 
 
@@ -48,14 +46,14 @@ export default (props) => {
             {welcomeBaycode}
           </div>
           <div className={styles.right}>
-            <Image alt={"none"} className={styles.imageSection} 
-              src={welcomeBaycodeImage}/>
+            <img className={styles.imageSection} 
+              src={welcomeBaycodeImage.src}/>
           </div>
         </div>
         <div className={styles.textSection}>
           <div className={styles.left}>
-            <Image alt={"none"} className={styles.imageSection} 
-              src={welcomePenetrationTestImage}/>
+            <img alt={"none"} className={styles.imageSection} 
+              src={welcomePenetrationTestImage.src}/>
           </div>
           <div className={styles.right}>
             {welcomePenetrationTest}
@@ -65,19 +63,19 @@ export default (props) => {
       <section className="get-a-quote">
         {getQuote}
       </section>
-      <section id="landing-tiles-2">
+      <section id="landing-tiles-2" className="landing-tiles-2">
         <div className={styles.textSection}>
           <div className={styles.left}>
             {welcomeSoftwareEngineering}
           </div>
           <div className={styles.right}>
-            <Image alt={"none"} className={styles.imageSection} 
-              src={welcomeSoftwareEngineeringImage}/>
+            <img alt={"none"} className={styles.imageSection} 
+              src={welcomeSoftwareEngineeringImage.src}/>
           </div>
         </div>
         <div className={styles.textSection}>
           <div className={styles.left}>
-            <Image alt={"none"} className={styles.imageSection} src={welcomeDevelopedApplicationsSecurityImage}></Image>
+            <img alt={"none"} className={styles.imageSection} src={welcomeDevelopedApplicationsSecurityImage.src}></img>
           </div>
           <div className={styles.right}>
             {welcomeDevelopedApplicationsSecurity}
@@ -87,10 +85,17 @@ export default (props) => {
       <section className="get-a-quote">
         {getQuote}
       </section>
-      <section ref={stackRef} className="stack-container">
-        {stack}
+      <section>
+      <div className={styles.textSection}>
+          <div className={styles.left}>
+            {welcomeSoarSiem}
+          </div>
+          <div className={styles.right}>
+            <img alt={"none"} className={styles.imageSection} src={welcomeSoarSiemImage.src}></img>
+          </div>
+        </div>
       </section>
-      <section className="blog-carousel-under-get-a-quote">
+      <section className="blog-carousel">
         {blogCarousel}
       </section>
     </div>

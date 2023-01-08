@@ -1,14 +1,14 @@
 .heroContainer {
   padding-top: 64px;
   padding-bottom: 64px;
-  background: radial-gradient(circle, rgba(99,102,249,1) 5%, rgba(3,150,218,1) 51%, rgba(0,153,254,1) 66%, rgba(5,98,180,1) 100%);
+  background: radial-gradient(circle, rgb(117, 119, 255) 5%, rgb(5, 144, 237) 51%, rgb(77, 80, 238) 66%, rgb(78, 214, 171) 100%);
   background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
 }
 
 .hero-section {
   position: relative;
-
+  box-shadow: black 0px 0px 24px;
   height: 100% !important;
   -ms-flex-align: center !important;
   align-items: center !important;
