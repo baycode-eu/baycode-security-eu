@@ -6,7 +6,7 @@
   // margin-top: 64px;
   gap: 32px;
   line-height: 1.5rem;
-  margin-top:16px;
+  margin-top:32px;
   justify-content: space-between;
 }
 
@@ -21,6 +21,7 @@
   }
   .left, .right {
     justify-content: center;
+
   }
 
   .textSection:nth-child(even) {
@@ -32,7 +33,8 @@
 .imageSection {
   // border-radius: 90%;
   flex-grow: 1;
-  border-radius: 32px;
+  // border-radius: 32px;
+  box-shadow: black 0px 0px 16px;
 
   flex-shrink: 1;
   max-width: 100%;

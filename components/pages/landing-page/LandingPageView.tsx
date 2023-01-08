@@ -30,6 +30,7 @@ const LandingPageView = (props) => {
     welcomeDevelopedApplicationsSecurityImage={review}
     welcomePenetrationTestImage={locked}
     welcomeSoarSiemImage={hackersuit}
+    welcomeWorkshopsImage={hacker}
     getQuote={<GetQuote
       textQuoteDevelopment={""}
       getQuote={
@@ -38,6 +39,16 @@ const LandingPageView = (props) => {
         </Button>
       }
     />}
+    getWorkshops={
+      <GetQuote
+      textQuoteDevelopment={""}
+      getQuote={
+        <Button primary>
+          Browse products
+        </Button>
+      }
+    />
+    }
 
     welcomeBaycode={
       <Card
@@ -65,7 +76,7 @@ const LandingPageView = (props) => {
         <><p>We believe in the power of agile software development methodologies to deliver high-quality software on time and on budget. Agile methodologies, such as Scrum and Kanban, are designed to be flexible, responsive, and customer-focused, allowing for rapid development and delivery of software products.</p><br/>
         <p>In an agile software development process, teams work in short sprints, focusing on delivering small increments of software that add value to the end user. This approach allows for quick feedback and iteration, resulting in a product that is more closely aligned with the needs and desires of the customer.</p><br/>
         <p>We deliver APIs that allow different systems and applications to communicate with each other. This is an essential part of modern software development and is often used to create integrations between different systems or to expose data and functionality to third parties.</p><br/>
-        <p>Our expertise in cloud development and cloud security can deliever secure, compliant cloud-based solutions, including those built on Microsoft Azure.</p><br/>
+        <p>Our expertise in cloud development and cloud security allows us to deliever secure, compliant cloud-based solutions, including those built on Microsoft Azure.</p><br/>
         <p>Whether you need a custom business application, a frontend for a web application, mobile application, or a backend to power an API, our team has the skills and expertise to help you succeed. Whatever you need, we get you there.</p><br/></>
       </Card>  
     }
@@ -82,7 +93,7 @@ const LandingPageView = (props) => {
 
     welcomeSoarSiem={
       <Card
-        title={<>Automated<C> Monitoring</C></>}
+        title={<>Automated <C>monitoring</C></>}
        ><>
           <p>Baycode Security offers cybersecurity automate cyber-monitoring services including implementing SOAR, which is a powerful tool that helps organizations automate and streamline their security processes.</p><br/>
           <p>SOAR automatically adjusts it's rules based on security feed data, and actvely seeks for emerging threats.</p><br/>
@@ -93,11 +104,12 @@ const LandingPageView = (props) => {
 
     welcomeWorkshops={
       <Card
-        title={<>Tailored <C>workshops</C></>}
+        title={<>Training and <C>Workshops</C></>}
        ><>
-          <p>Baycode Security offers cybersecurity automate cyber-monitoring services including implementing SOAR, which is a powerful tool that helps organizations automate and streamline their security processes.</p><br/>
-          <p>SOAR automatically adjusts it's rules based on security feed data, then seeks, prevents, and alerts on emerging threats.</p><br/>
-          <p>We also offer threat hunting services, which involves proactively searching for, and identifying potential threats within an organization's network. </p><br/>
+          <p>Our expert team offers training and workshops to help individuals and organizations stay safe online, counting per person.</p><br/> 
+          <p>Our courses range from beginner-level courses that covers the basics of cyber-security and how to protect against common threats, to more in-depth course for experienced professionals, covering advanced topics such as penetration testing and software development. </p><br/>
+          <p>We can tailor a workshop to fit the specific needs of your organization.</p><br/>
+          <p>Press the button below to get products pricing</p><br/>
         </>
       </Card>
     }

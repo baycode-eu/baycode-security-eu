@@ -16,7 +16,9 @@ export default (props) => {
     welcomeSoftwareEngineeringImage,
     blogCarousel,
     welcomeSoarSiemImage,
-    welcomeSoarSiem
+    welcomeSoarSiem,
+    welcomeWorkshops,
+    welcomeWorkshopsImage
   } = props
 
   // TODO WORKSHOPS
@@ -88,6 +90,16 @@ export default (props) => {
             <div>
               <img alt={"none"} className={styles.imageSection} src={welcomeSoarSiemImage.src}></img>
             </div>
+          </div>
+        </div>
+        <div className={styles.textSection}>
+          <div className={styles.left}>
+            <div>
+            <img alt={"none"} className={styles.imageSection} src={welcomeWorkshopsImage.src}></img>
+            </div>
+          </div>
+          <div className={styles.right}>
+            {welcomeWorkshops}
           </div>
         </div>
       </section>

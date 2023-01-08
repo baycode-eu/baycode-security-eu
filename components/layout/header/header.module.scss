@@ -2,14 +2,17 @@
 @import "styles/layout.scss";
 
 
-.header {
+.header {  
+  z-index: 1000;
+  position: sticky;
+  top: 0;
   justify-content: center;
   align-items: center;
   min-height:68px;
-  border-bottom: 1px solid $header-split;
   display: flex;
   flex-direction: column;
   background-color: $black;
+  box-shadow: black 0 0 5px;
 }
 
 .headerContents {
