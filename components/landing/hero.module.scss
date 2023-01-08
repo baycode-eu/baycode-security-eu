@@ -24,7 +24,6 @@ $max-dynamic-width: 1640px;
   .colorizeText {
     color: $accent;
   }
-
   position: relative;
   display: flex;
   flex-direction: column;
@@ -53,7 +52,6 @@ $max-dynamic-width: 1640px;
     }
   }
   & > .domain {
-    text-align:end;
     margin-top:32px;
     font-size: calc(13px + 1vw);
     @media screen and (min-width: $max-dynamic-width) {
@@ -69,6 +67,7 @@ $max-dynamic-width: 1640px;
     width: 100%;
     align-items: center;
     justify-content: space-evenly;
+    justify-content: center;
     min-height: 32px;
 
     & > li {

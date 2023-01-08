@@ -16,9 +16,9 @@ export default (props) => (
       <li>🔍 Penetration Tests</li>
       <li>💻 Custom Software</li>
       <li>📱 App Security Testing</li>
-      <li>🚀 SOAR</li>
-      <li>🕵️‍♂️ Threat Hunting</li>
-      <li>☁️ Consultancy</li>
+      <li>🛡️ Threat Hunting & SOAR</li>
+      <li>🎓 Workshops</li>
+      <li>💼 Consultancy</li>
     </ul>
     <div className={styles.quote}>
       <GetQuote

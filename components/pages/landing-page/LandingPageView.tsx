@@ -7,12 +7,22 @@ import review from "public/review.png";
 import Card from "components/ui/molecules/common/Card";
 import Hero from "components/landing/Hero";
 import C from "components/ui/atoms/ColorText";
+import GetQuote from "components/landing/quote/GetQuote";
+import { Button } from "components/ui/atoms/button/Button";
 
 const LandingPageView = (props) => {
   return <LandingPageTemplate
     hero={<Hero
       title={"Your security"}
       subtitle={"our expertise"}
+      getQuote={<GetQuote
+        textQuoteDevelopment={""}
+        getQuote={
+          <Button primary>
+            Get a free quote
+          </Button>
+        }
+      />}
       onQuote={props.redirectToQuote}
     />}
     welcomeBaycodeImage={hacker}  
@@ -20,6 +30,14 @@ const LandingPageView = (props) => {
     welcomeDevelopedApplicationsSecurityImage={review}
     welcomePenetrationTestImage={locked}
     welcomeSoarSiemImage={hackersuit}
+    getQuote={<GetQuote
+      textQuoteDevelopment={""}
+      getQuote={
+        <Button primary>
+          Get a free quote
+        </Button>
+      }
+    />}
 
     welcomeBaycode={
       <Card
@@ -64,7 +82,7 @@ const LandingPageView = (props) => {
 
     welcomeSoarSiem={
       <Card
-        title={<>Automated Cyber Security <C>Monitoring</C></>}
+        title={<>Automated<C> Monitoring</C></>}
        ><>
           <p>Baycode Security offers cybersecurity automate cyber-monitoring services including implementing SOAR, which is a powerful tool that helps organizations automate and streamline their security processes.</p><br/>
           <p>SOAR automatically adjusts it's rules based on security feed data, and actvely seeks for emerging threats.</p><br/>
@@ -73,12 +91,12 @@ const LandingPageView = (props) => {
       </Card>
     }
 
-    welcomePhishingAndWorkshops={
+    welcomeWorkshops={
       <Card
-        title={<>Automated Cyber Security <C>Monitoring</C></>}
+        title={<>Tailored <C>workshops</C></>}
        ><>
           <p>Baycode Security offers cybersecurity automate cyber-monitoring services including implementing SOAR, which is a powerful tool that helps organizations automate and streamline their security processes.</p><br/>
-          <p>SOAR automatically adjusts it's rules based on security feed data, and actvely seeks for emerging threats.</p><br/>
+          <p>SOAR automatically adjusts it's rules based on security feed data, then seeks, prevents, and alerts on emerging threats.</p><br/>
           <p>We also offer threat hunting services, which involves proactively searching for, and identifying potential threats within an organization's network. </p><br/>
         </>
       </Card>

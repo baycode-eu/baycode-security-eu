@@ -16,6 +16,9 @@ const Header = (props) => {
           <div className={styles.menuEntry}>
             Blog
           </div>
+          <div className={styles.menuEntry} style={{}}>
+            Workshops
+          </div>
           <div className={styles.menuEntry}>
             Threat Hunting & SOAR
           </div>          
@@ -26,7 +29,7 @@ const Header = (props) => {
             Custom Software
           </div>
           <div className={[styles.contact, styles.menuEntry].join(" ")}>
-            Get a Quote
+            Contact
           </div>
       </div>
     </div>
