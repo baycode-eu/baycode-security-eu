@@ -10,9 +10,9 @@ $white: #fafafa;
 $black: #0a0a0a;
 
 // main
-$primary: rgb(228,229,229);
-$secondary: rgb(233,232,223);
-$accent: $gamboge; // rgb(249, 117, 22);
+$primary:  $gamboge;
+$secondary:rgb(52, 138, 204);
+$accent: rgb(52, 138, 204);  // rgb(249, 117, 22);
 
 $background: $black;
 $layout-background: #fafafa;
@@ -26,7 +26,6 @@ $white-neumorphic-brighter: #ffffff;
 $white-neumorphic-darker: #e5e5e5;
 $white-alternative-neumorphic-darker:#cdd5ca;
 
-$primary: $purple;
 $primary-neumorphic-brighter: $white-neumorphic-brighter;
 $primary-neumorphic-darker: $white-neumorphic-darker;
 

@@ -1,8 +1,6 @@
 import * as React from "react";
 import Layout from "components/layout/layout";
 import styles from "./landing-page-template.module.scss";
-import Image from "next/image";
-import GetQuoteDevelopment from "components/landing/quote/GetQuoteDevelopment";
 
 export default (props) => {
   const {
@@ -21,39 +19,31 @@ export default (props) => {
     welcomeSoarSiem
   } = props
 
+  // TODO WORKSHOPS
 
-  return <Layout>
+  return <Layout hero={hero}>
     <div className="landing-page-template">
-      <section id="hero-section" className="hero-section">
-        <div className="heroContainer">
-          {hero}
-          <div className="caro-mask"></div>
-        </div>
-      </section>
-      <section className="get-a-quote-development">
-        <GetQuoteDevelopment
-          textQuoteDevelopment={<>ddd</>}
-          getQuote={<>ddd</>}
-          getDevelopment={<>ddd</>}
-        />
-      </section>
       <section className="blog-carousel">
-        {blogCarousel}
+        {blogCarousel} blog
       </section>
-      <section id="landing-tiles" className="landing-tiles">
+      <section id="landing-tiles" className={styles.landingTiles}>
         <div className={styles.textSection}>
           <div className={styles.left}>
             {welcomeBaycode}
           </div>
           <div className={styles.right}>
-            <img className={styles.imageSection} 
-              src={welcomeBaycodeImage.src}/>
+            <div>
+              <img className={styles.imageSection} 
+                src={welcomeBaycodeImage.src}/>
+            </div>
           </div>
         </div>
         <div className={styles.textSection}>
           <div className={styles.left}>
-            <img alt={"none"} className={styles.imageSection} 
-              src={welcomePenetrationTestImage.src}/>
+            <div>
+              <img alt={"none"} className={styles.imageSection} 
+                src={welcomePenetrationTestImage.src}/>
+            </div>
           </div>
           <div className={styles.right}>
             {welcomePenetrationTest}
@@ -69,13 +59,17 @@ export default (props) => {
             {welcomeSoftwareEngineering}
           </div>
           <div className={styles.right}>
-            <img alt={"none"} className={styles.imageSection} 
-              src={welcomeSoftwareEngineeringImage.src}/>
+            <div>
+              <img alt={"none"} className={styles.imageSection} 
+                 src={welcomeSoftwareEngineeringImage.src}/>
+            </div>
           </div>
         </div>
         <div className={styles.textSection}>
           <div className={styles.left}>
+            <div>
             <img alt={"none"} className={styles.imageSection} src={welcomeDevelopedApplicationsSecurityImage.src}></img>
+            </div>
           </div>
           <div className={styles.right}>
             {welcomeDevelopedApplicationsSecurity}
@@ -86,12 +80,14 @@ export default (props) => {
         {getQuote}
       </section>
       <section>
-      <div className={styles.textSection}>
+        <div className={styles.textSection}>
           <div className={styles.left}>
             {welcomeSoarSiem}
           </div>
           <div className={styles.right}>
-            <img alt={"none"} className={styles.imageSection} src={welcomeSoarSiemImage.src}></img>
+            <div>
+              <img alt={"none"} className={styles.imageSection} src={welcomeSoarSiemImage.src}></img>
+            </div>
           </div>
         </div>
       </section>

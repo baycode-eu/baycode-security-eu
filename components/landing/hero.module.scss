@@ -11,6 +11,10 @@ $max-dynamic-width: 1640px;
   text-align: end;
 }
 
+.quote {
+  margin-top: 36px;
+}
+
 .hero {
   z-index: 300;
   @media screen and (min-width: $mobile-width) {

@@ -4,8 +4,6 @@ import {redirect} from "utils/navigation";
 import Logo from "./logo/Logo";
 
 const Header = (props) => {
-  // const {menu} = props.menu
-
   return <div className={styles.header}>
     <div className={styles.headerContents}>
         <div className={styles.logo}>
@@ -16,13 +14,19 @@ const Header = (props) => {
         </div>
         <div className={styles.menu}>
           <div className={styles.menuEntry}>
-            Development
-          </div>
-          <div className={styles.menuEntry}>
             Blog
           </div>
+          <div className={styles.menuEntry}>
+            Threat Hunting & SOAR
+          </div>          
+          <div className={styles.menuEntry}>
+            Penetration Testing
+          </div>
+          <div className={styles.menuEntry}>
+            Custom Software
+          </div>
           <div className={[styles.contact, styles.menuEntry].join(" ")}>
-            Contact
+            Get a Quote
           </div>
       </div>
     </div>

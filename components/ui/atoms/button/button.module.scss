@@ -4,27 +4,20 @@
 .button {
   z-index: 1000;
   border: none;
-  background-color: red;
   // neumorphism
   border-radius: 8px;
   background: $white;
-
-  &.pressed {
-    background: $white;
-    box-shadow:  inset 5px 5px 10px $white-neumorphic-darker,
-    inset -5px -5px 10px $white-neumorphic-brighter;
-  }
-
+  box-shadow: $primary 0px 0px 244px;
   min-width: 48px;
   min-height: 48px;
-  font-size: $medium;
+  font-size: 16px;
   font-weight: bold;
   padding: 12px;
   color: $white-alternative-text;
   z-index: 1;
   cursor: pointer;
 
-  &.big {
+  & .big {
     height: 64px;
     font-size:14px;
     font-weight: bold;
@@ -37,7 +30,7 @@
   }
 
   &.primary {
-    color: $white-alternative;
+    color: white;
     background: $primary;
   }
 

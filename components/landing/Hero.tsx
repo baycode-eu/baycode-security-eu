@@ -1,5 +1,7 @@
+import { Button } from "components/ui/atoms/button/Button"
 import * as React from "react"
 import styles from "./hero.module.scss"
+import GetQuote from "./quote/GetQuote"
 
 export default (props) => (
   <div className={styles.hero}>
@@ -12,11 +14,21 @@ export default (props) => (
     </ul>
     <ul className={styles.domain}>
       <li>🔍 Penetration Tests</li>
-      <li>💻 Software Development</li>
+      <li>💻 Custom Software</li>
       <li>📱 App Security Testing</li>
       <li>🚀 SOAR</li>
       <li>🕵️‍♂️ Threat Hunting</li>
-      <li>☁️ Cloud Security</li>
+      <li>☁️ Consultancy</li>
     </ul>
+    <div className={styles.quote}>
+      <GetQuote
+        textQuoteDevelopment={""}
+        getQuote={
+          <Button primary>
+            Get a free quote
+          </Button>
+        }
+      />
+    </div>
   </div>
 )
