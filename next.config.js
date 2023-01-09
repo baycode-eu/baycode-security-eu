@@ -2,6 +2,7 @@
 const nextConfig = {
   reactStrictMode: false,
   typescript: {
+    optimizeFonts: false,
     ignoreBuildErrors: true
   }
 }

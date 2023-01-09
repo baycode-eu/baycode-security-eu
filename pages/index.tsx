@@ -2,7 +2,7 @@ import Head from 'next/head'
 import { Inter } from '@next/font/google'
 import LandingPageView from 'components/pages/landing-page/LandingPageView'
 const inter = Inter({ subsets: ['latin'] })
-import { Posts } from '../API/wordpress';
+import { Posts } from '../api/wordpress';
 
 export default function Home(props) {
   return (
