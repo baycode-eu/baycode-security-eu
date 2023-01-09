@@ -15,7 +15,7 @@ export default function Home(props) {
       </Head>
       <main>
         <LandingPageView
-          posts={props.posts}
+          articles={props.articles}
         />
       </main>
     </>
@@ -23,15 +23,14 @@ export default function Home(props) {
 }
 
 export async function getServerSideProps() {
-  let posts = []
+  let articles = []
   try {
-    posts = await Posts.getPosts()
-  } catch (e) {
-    
+    articles = await Posts.getPosts()
+  } catch (e) {    
   }
   return {
     props: {
-      posts
+      articles
     }
   }
 }

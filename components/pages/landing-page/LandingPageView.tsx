@@ -9,6 +9,7 @@ import Hero from "components/landing/Hero";
 import C from "components/ui/atoms/ColorText";
 import GetQuote from "components/landing/quote/GetQuote";
 import { Button } from "components/ui/atoms/button/Button";
+import BlogCarousel from "components/carousel/BlogCarousel";
 
 const LandingPageView = (props: any) => {
   return <LandingPageTemplate
@@ -25,6 +26,7 @@ const LandingPageView = (props: any) => {
       />}
       onQuote={props.redirectToQuote}
     />}
+    blogCarousel={<BlogCarousel articles={props.articles}/>}
     welcomeBaycodeImage={hacker}  
     welcomeSoftwareEngineeringImage={builder}
     welcomeDevelopedApplicationsSecurityImage={review}

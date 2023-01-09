@@ -26,11 +26,13 @@ export const Posts = {
     posts = posts.sort((a,b) => a.sticky)
     posts = posts.map(item => {
       let newItem = item;
-      newItem.excerpt = newItem.excerpt?.rendered.replace(/(<([^>]+)>)/gi, "").trim();
+      newItem.title = newItem.title.rendered ? newItem.title.rendered : newItem.title
+      newItem.description = newItem.excerpt?.rendered.replace(/(<([^>]+)>)/gi, "").trim();
       newItem.modified = new Date(newItem.modified)
       newItem.modified = ("0" + newItem.modified.getDate()).slice(-2) + "-" 
         + ("0"+(newItem.modified.getMonth()+1)).slice(-2) 
         + "-" + newItem.modified.getFullYear() 
+      newItem.thumbnail = newItem._embedded["wp:featuredmedia"] ? newItem._embedded["wp:featuredmedia"][0].source_url : ''
       return newItem
     })
     

@@ -25,9 +25,9 @@ export default (props: any) => {
   return <Layout hero={hero}>
     <div className="landing-page-template">
       <FadeIn>
-        <section className="blog-carousel">
-          {blogCarousel} blog
-        </section>
+        {/* <section className="blog-carousel" style={{marginTop: "32px"}}>
+          {blogCarousel}
+        </section> */}
       </FadeIn>
       <section id="landing-tiles" className={styles.landingTiles}>
         <FadeIn>
@@ -123,7 +123,7 @@ export default (props: any) => {
       <section className={styles["get-a-quote"]}>
         {getWorkshops}
       </section>
-      <section className="blog-carousel">
+      <section className={styles.blogCarousel}>
         {blogCarousel}
       </section>
     </div>
