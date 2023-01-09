@@ -24,27 +24,31 @@ export default (props: any) => {
 
   return <Layout hero={hero}>
     <div className="landing-page-template">
-      <FadeIn>
+
         {/* <section className="blog-carousel" style={{marginTop: "32px"}}>
           {blogCarousel}
         </section> */}
-      </FadeIn>
+ 
       <section id="landing-tiles" className={styles.landingTiles}>
-        <FadeIn>
+        
           <div className={styles.textSection}>
+       
             <div className={styles.left}>
               {welcomeBaycode}
             </div>
+      
             <div className={styles.right}>
               <div>
                 <img className={styles.imageSection}
                   src={welcomeBaycodeImage.src} />
               </div>
             </div>
+           
           </div>
-        </FadeIn>
-        <FadeIn toLeft>
+     
+       
           <div className={styles.textSection}>
+        
             <div className={styles.left}>
               <div>
                 <img alt={"none"} className={styles.imageSection}
@@ -54,16 +58,17 @@ export default (props: any) => {
             <div className={styles.right}>
               {welcomePenetrationTest}
             </div>
+            
           </div>
-        </FadeIn>
+     
       </section>
-      <FadeIn>
+      {/* <FadeIn> */}
         <section className={styles["get-a-quote"]}>
           {getQuote}
         </section>
-      </FadeIn>
+      {/* </FadeIn> */}
       <section id="landing-tiles-2" className="landing-tiles-2">
-        <FadeIn>
+      
           <div className={styles.textSection}>
             <div className={styles.left}>
               {welcomeSoftwareEngineering}
@@ -75,9 +80,10 @@ export default (props: any) => {
               </div>
             </div>
           </div>
-        </FadeIn>
-        <FadeIn toLeft>
+     
+        
           <div className={styles.textSection}>
+       
             <div className={styles.left}>
               <div>
                 <img alt={"none"} className={styles.imageSection} src={welcomeDevelopedApplicationsSecurityImage.src}></img>
@@ -86,17 +92,19 @@ export default (props: any) => {
             <div className={styles.right}>
               {welcomeDevelopedApplicationsSecurity}
             </div>
+     
           </div>
-        </FadeIn>
+       
       </section>
-      <FadeIn>
+
         <section className={styles["get-a-quote"]}>
           {getQuote}
         </section>
-      </FadeIn>
+
       <section>
-        <FadeIn>
+        
           <div className={styles.textSection}>
+         
             <div className={styles.left}>
               {welcomeSoarSiem}
             </div>
@@ -105,10 +113,12 @@ export default (props: any) => {
                 <img alt={"none"} className={styles.imageSection} src={welcomeSoarSiemImage.src}></img>
               </div>
             </div>
+       
           </div>
-        </FadeIn>
-        <FadeIn toLeft>
+        
+        
           <div className={styles.textSection}>
+  
             <div className={styles.left}>
               <div>
                 <img alt={"none"} className={styles.imageSection} src={welcomeWorkshopsImage.src}></img>
@@ -117,8 +127,9 @@ export default (props: any) => {
             <div className={styles.right}>
               {welcomeWorkshops}
             </div>
+    
           </div>
-        </FadeIn>
+      
       </section>
       <section className={styles["get-a-quote"]}>
         {getWorkshops}

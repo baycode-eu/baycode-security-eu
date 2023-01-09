@@ -19,14 +19,14 @@
     flex-direction: column;
     // padding: 16px;
   }
-  .left, .right {
-    justify-content: center;
-
-  }
-
   .textSection:nth-child(even) {
     flex-direction: column-reverse;
   }
+  .left, .right {
+    justify-content: center;
+  }
+
+
 }
 
 

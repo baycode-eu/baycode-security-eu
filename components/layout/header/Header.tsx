@@ -12,7 +12,7 @@ const Header = (props: any) => {
             secondaryLogoText={props.secondaryLogoText}
           />
         </div>
-        <div className={styles.menu}>
+        <div className={[styles.menu, styles.hiddenMobile].join(" ")}>
           <div className={styles.menuEntry}>
             Blog
           </div>
@@ -31,7 +31,7 @@ const Header = (props: any) => {
           <div className={[styles.contact, styles.menuEntry].join(" ")}>
             Contact
           </div>
-      </div>
+        </div>
     </div>
   </div>
 }

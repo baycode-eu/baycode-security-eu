@@ -14,7 +14,7 @@ import BlogCarousel from "components/carousel/BlogCarousel";
 const LandingPageView = (props: any) => {
   return <LandingPageTemplate
     hero={<Hero
-      title={"Your security"}
+      title={"Your security,"}
       subtitle={"our expertise"}
       getQuote={<GetQuote
         textQuoteDevelopment={""}
