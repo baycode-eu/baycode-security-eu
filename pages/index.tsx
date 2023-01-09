@@ -2,8 +2,9 @@ import Head from 'next/head'
 import { Inter } from '@next/font/google'
 import LandingPageView from 'components/pages/landing-page/LandingPageView'
 const inter = Inter({ subsets: ['latin'] })
+import { Posts } from '../API/wordpress';
 
-export default function Home() {
+export default function Home(props) {
   return (
     <>
       <Head>
@@ -14,9 +15,23 @@ export default function Home() {
       </Head>
       <main>
         <LandingPageView
-          // {...this.props}
+          posts={props.posts}
         />
       </main>
     </>
   )
+}
+
+export async function getServerSideProps() {
+  let posts = []
+  try {
+    posts = await Posts.getPosts()
+  } catch (e) {
+    
+  }
+  return {
+    props: {
+      posts
+    }
+  }
 }

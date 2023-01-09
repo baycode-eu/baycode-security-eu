@@ -3,7 +3,7 @@ import * as React from "react"
 import styles from "./hero.module.scss"
 import GetQuote from "./quote/GetQuote"
 
-export default (props) => (
+export default (props: any) => (
   <div className={styles.hero}>
     <h1 className={styles.title}>
       _baycode.eu

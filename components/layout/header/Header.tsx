@@ -3,7 +3,7 @@ import styles from "./header.module.scss";
 import {redirect} from "utils/navigation";
 import Logo from "./logo/Logo";
 
-const Header = (props) => {
+const Header = (props: any) => {
   return <div className={styles.header}>
     <div className={styles.headerContents}>
         <div className={styles.logo}>

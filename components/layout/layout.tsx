@@ -3,7 +3,7 @@ import Header from "./header/Header";
 import Footer from "./footer/Footer";
 import { getYear } from "utils/dates";
 
-export default (props) => {
+export default (props: any) => {
   return <div className="layout">
     <Header logoText="_baycode.eu" secondaryLogoText="security" />
     { props.hero && <section id="hero-section" className="hero-section">

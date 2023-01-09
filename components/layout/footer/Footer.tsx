@@ -4,7 +4,7 @@ import * as React from "react"
 import styles from "./footer.module.scss"
 // import {openContactModal} from "../../../store/actions/ModalActions";
 
-export default (props) => {
+export default (props: any) => {
   // const dispatch = useDispatch()
   return <div className={styles.footer}>
     {/* <a onClick={() => dispatch(openContactModal())}> */}
