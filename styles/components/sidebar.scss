@@ -1,20 +1,30 @@
-/* Position and sizing of burger button */
+.bm-item {
+  display: inline-block;
+
+  /* Our sidebar item styling */
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: #d1d1d1;
+  font-size: 24px;
+  line-height: 32px;
+  transition: color 0.2s;
+}
+
+.bm-item:hover {
+  color: white;
+}
+
 .bm-burger-button {
   position: fixed;
   width: 36px;
   height: 30px;
-  left: 36px;
-  top: 36px;
+  right: 20px;
+  top: 20px;
 }
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: #373a47;
-}
-
-/* Color/shape of burger icon bars on hover*/
-.bm-burger-bars-hover {
-  background: #a90000;
+  background: #ffffff;
 }
 
 /* Position and sizing of clickable cross button */
@@ -25,23 +35,31 @@
 
 /* Color/shape of close button cross */
 .bm-cross {
-  background: #bdc3c7;
-}
-
-/*
-Sidebar wrapper styles
-Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
-*/
-.bm-menu-wrap {
-  position: fixed;
-  height: 100%;
+  display:none;
 }
 
 /* General sidebar styles */
 .bm-menu {
-  background: #373a47;
-  padding: 2.5em 1.5em 0;
+  width:100vw;
+  background: #000;
+  transition:cubic-bezier(1, 0, 0, 1);
+  padding: 1em 1.5em;
   font-size: 1.15em;
+}
+
+.bm-menu-wrap {
+  display: block;
+  width: 100vw !important;
+  transition:cubic-bezier(1, 0, 0, 1);
+}
+
+@media screen and (min-width: 767px) {
+  .bm-menu {
+    display: none;
+  }
+  .bm-burger-bars {
+    display: none;
+  }
 }
 
 /* Morph shape necessary with bubble or elastic */
@@ -52,26 +70,9 @@ Note: Beware of modifying this element as it can break the animations - you shou
 /* Wrapper for item list */
 .bm-item-list {
   color: #b8b7ad;
-  padding: 0.8em;
 }
-
-/* Individual item */
-.bm-item {
-  display: inline-block;
-
-  color: #d1d1d1;
-  margin-bottom: 10px;
-  text-align: left;
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
-.bm-item:hover {
-  color: #ffffff;
-}
-
 
 /* Styling of overlay */
 .bm-overlay {
-  background: rgba(0, 0, 0, 0.3);
+  display: none;
 }
