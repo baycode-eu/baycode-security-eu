@@ -87,7 +87,7 @@ export default (props: any) => {
       <section className={styles["get-a-quote"]}>
         {getQuote}
       </section>
-      <FadeIn>
+      <FadeIn toLeft>
         <section>
           <div className={styles.textSection}>
             <div className={styles.left}>

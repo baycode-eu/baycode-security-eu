@@ -2,6 +2,7 @@ import * as React from "react";
 import styles from "./header.module.scss";
 import {redirect} from "utils/navigation";
 import Logo from "./logo/Logo";
+import BurgirMenu from "./menu/BurgirMenu";
 
 const Header = (props: any) => {
   return <div className={styles.header}>
@@ -16,7 +17,7 @@ const Header = (props: any) => {
           <div className={styles.menuEntry}>
             Blog
           </div>
-          <div className={styles.menuEntry} style={{}}>
+          <div className={styles.menuEntry}>
             Workshops
           </div>
           <div className={styles.menuEntry}>
@@ -32,6 +33,9 @@ const Header = (props: any) => {
             Contact
           </div>
         </div>
+        <BurgirMenu pageWrapId={'page'} outerContainerId={'page'} />
+
+
     </div>
   </div>
 }

@@ -6,6 +6,7 @@ import "styles/components/carousel/blog-carousel.scss"
 import "styles/components/carousel/carousel-article.scss"
 import "swiper/css";
 import "swiper/css/pagination";
+import "styles/components/sidebar.scss"
 
 import type { AppProps } from 'next/app'
 
