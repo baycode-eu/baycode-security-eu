@@ -12,7 +12,7 @@ export default (props: any) => {
     welcomeDevelopedApplicationsSecurityImage,
     hero,
     getQuote,
-    getWorkshops,
+    getBlog,
     welcomeSoftwareEngineering,
     welcomeSoftwareEngineeringImage,
     blogCarousel,
@@ -112,7 +112,7 @@ export default (props: any) => {
         </section>
       </FadeIn>
       <section className={styles["get-a-quote"]}>
-        {getWorkshops}
+        {getBlog}
       </section>
       <section className={styles.blogCarousel}>
         {blogCarousel}

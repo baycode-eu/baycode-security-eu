@@ -1,32 +1,6 @@
 @import "styles/colors";
 @import "styles/fonts";
 
-.blog-carousel {
-  z-index: 2;
-  & > .blog {
-    display: inline-block;
-    margin-left: 20px;
-    margin-bottom: 32px;
-
-    font-weight:800;
-    background: -webkit-linear-gradient($logo-color, $gamboge);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    line-height:48px;
-
-    &:hover {
-      cursor: pointer;
-    }
-  }
-
-  & > .title {
-    background: -webkit-linear-gradient($logo-color, $gamboge);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    padding-bottom: 16px;
-    margin-bottom: 16px;
-    z-index: 2;
-
-  }
+.blog-carousel-swiper {
+padding: 0px 16px 0 16px !important;
 }

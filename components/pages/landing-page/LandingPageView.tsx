@@ -42,13 +42,15 @@ const LandingPageView = (props: any) => {
         </Button>
       }
     />}
-    getWorkshops={
+    getBlog={
       <GetQuote
         textQuoteDevelopment={""}
         getQuote={
-          <Button primary big>
-            Browse workshops
-          </Button>
+          <a href={process.env.BLOG}>
+            <Button primary big>
+              Browse News
+            </Button>
+          </a>
         }
       />
     }

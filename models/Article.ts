@@ -11,6 +11,7 @@ interface Article {
   header?: string;
   contents?: any;
   redirect?: string;
+  link: string;
 }
 
 export default Article;
