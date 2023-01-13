@@ -8,6 +8,7 @@ interface Props {
   big?: boolean,
   primary?: boolean
   scroll?: boolean,
+  smol?: boolean,
   onPress?: (e) => void,
   loading?: boolean
   disabled?: boolean
@@ -18,7 +19,7 @@ export const Button = (props: Props) => {
   const onClick = available ? props.onPress : () => {}
 
   return <button
-    className={`${styles.button} ${props.big ? styles.big : ''} ${props.primary ? styles.primary : ''} ${props.loading ? styles.loading : ''} ${props.scroll ? styles.scroll : ''} ${props.disabled ? styles.disabled : ''} ${props.class ? props.class : ''} `}
+    className={`${styles.button} ${props.big ? styles.big : ''} ${props.smol ? styles.smol :''} ${props.primary ? styles.primary : ''} ${props.loading ? styles.loading : ''} ${props.scroll ? styles.scroll : ''} ${props.disabled ? styles.disabled : ''} ${props.class ? props.class : ''} `}
     onClick={onClick}
   >
     {props.children}

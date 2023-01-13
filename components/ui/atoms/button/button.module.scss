@@ -23,7 +23,12 @@
   z-index: 1;
   cursor: pointer;
 
-  & .big {
+  &.smol {
+    font-size: 14px !important;
+    font-weight: bold;
+  }
+
+  &.big {
     height: 64px;
     font-size:14px;
     font-weight: bold;

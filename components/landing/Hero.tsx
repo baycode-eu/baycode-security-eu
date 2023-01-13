@@ -16,7 +16,7 @@ export default (props: any) => (
       <li>🔍 Penetration Tests</li>
       <li>💻 Custom Software</li>
       <li>📱 App Security Testing</li>
-      <li>🛡️ Threat Hunting & SOAR</li>
+      <li>🛡️ SOAR</li>
       <li>🎓 Workshops</li>
       <li>💼 Consultancy</li>
     </ul>

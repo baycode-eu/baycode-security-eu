@@ -1,7 +1,8 @@
 import LandingPageTemplate from "./LandingPageTemplate";
-import hacker from "public/hacker.png";
+import hacker from "public/hacker-3.png";
 import hackersuit from "public/hackersuit.png";
 import locked from "public/locked.png";
+import lockedKey from "public/lockedkey.png";
 import builder from "public/builder.png";
 import review from "public/review.png";
 import Card from "components/ui/molecules/common/Card";
@@ -31,8 +32,8 @@ const LandingPageView = (props: any) => {
     welcomeSoftwareEngineeringImage={builder}
     welcomeDevelopedApplicationsSecurityImage={review}
     welcomePenetrationTestImage={locked}
-    welcomeSoarSiemImage={hackersuit}
-    welcomeWorkshopsImage={hacker}
+    welcomeSoarSiemImage={lockedKey}
+    welcomeWorkshopsImage={hackersuit}
     getQuote={<GetQuote
       textQuoteDevelopment={""}
       getQuote={
@@ -54,11 +55,11 @@ const LandingPageView = (props: any) => {
 
     welcomeBaycode={
       <Card
-        title={<>How we can <C>help you</C></>}
-        ><><p>Our mission is to help businesses and organizations secure and grow their systems, as well as protect their data from cyber threats. We offer a range of services to identify vulnerabilities, assess risk, and provide solutions for improving security and business.</p><br/>
+        title={<>How we can <C>help you</C></>}>
+          <><p>Our mission is to help businesses and organizations to secure and grow their systems, as well as protect their data from cyber threats. We offer a range of services from providing software solutions, to identifying vulnerabilities, assessing risk, and improving security posture of a business.</p><br/>
           <p>We have a deep understanding of the latest cybersecurity technologies and techniques, as well as extensive experience in software development.</p><br/>
           <p>Commitment to staying up-to-date with the latest industry trends and best practices, in order to secure you is our priority. </p><br/>
-          <p>Our expertise helps you succeed with your needs, whether it be a one-time penetration test, or ongoing support.</p></>
+          <p>Our expertise helps you succeed with your needs, whether it be a one-time penetration test, development of advanced startup greenfield application, API, brochure-ware, or ongoing support.</p></>
       </Card>
     }
 
@@ -97,9 +98,11 @@ const LandingPageView = (props: any) => {
       <Card
         title={<>Automated <C>monitoring</C></>}
        ><>
-          <p>Baycode Security offers cybersecurity automate cyber-monitoring services including implementing SOAR, which is a powerful tool that helps organizations automate and streamline their security processes.</p><br/>
-          <p>SOAR automatically adjusts it's rules based on security feed data, interpretes the results, and proactively seeks for emerging threats.</p><br/>
-          <p>We also offer threat hunting services, which involves proactively searching for, and identifying potential threats within an organization's network. </p><br/>
+          <p>Baycode Security offers cybersecurity services that utilize SOAR to provide automated threat hunting and cyber-monitoring.</p><br/>
+          <p>SOAR is a tool that utilizes Artificial Intelligence, and helps organizations to automate and streamline their security processes by proactively searching for and identifying potential threats within a network. It uses security feed data to adjust its rules and proactively seeks out emerging threats.</p><br/>
+          <p>Host-based agents will be configured to work by monitoring and collecting data of the activity on the host machine, allowing for increased visibility and security. This data can then be put into SIEM, and analyzed by SOAR platform to identify and respond to potential threats.</p><br/>
+          <p>The secure infrastructure will utilize firewalls as a barrier to block or allow incoming and outgoing traffic based on predefined security rules, while intrusion detection systems monitor network activity to detect and alert on suspicious activity.</p><br/>
+          <p>Let the technology work with you, before it works against you.</p><br/>
         </>
       </Card>
     }

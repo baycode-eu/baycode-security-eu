@@ -2,6 +2,13 @@
 @import "styles/layout.scss";
 
 
+.logo {
+  display: flex;
+  align-items: center;
+  
+  min-height: 100%;
+}
+
 .header {  
   z-index: 1000;
   position: sticky;
@@ -14,20 +21,17 @@
   background-color: $black;
 }
 
-
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1060px) {
   .hiddenMobile {
     display: none !important;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1060px) {
   .hiddenDesktop {
     display: none !important;
   }
 }
-
 
 .headerContents {
   display: flex;
