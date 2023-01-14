@@ -15,7 +15,7 @@ import BlogCarousel from "components/carousel/BlogCarousel";
 const LandingPageView = (props: any) => {
   return <LandingPageTemplate
     hero={<Hero
-      title={"Your security,"}
+      title={"Your business,"}
       subtitle={"our expertise"}
       getQuote={<GetQuote
         textQuoteDevelopment={""}
@@ -42,13 +42,23 @@ const LandingPageView = (props: any) => {
         </Button>
       }
     />}
-    getBlog={
+    getWorkshops={
       <GetQuote
-        textQuoteDevelopment={""}
+        getQuote={
+          <a href={"/workshops"}>
+            <Button primary>
+              Browse workshops
+            </Button>
+          </a>
+        }
+      />
+    }
+    browseBlog={
+      <GetQuote 
         getQuote={
           <a href={process.env.BLOG}>
-            <Button primary big>
-              Browse News
+            <Button primary>
+              Browse news
             </Button>
           </a>
         }
@@ -58,9 +68,9 @@ const LandingPageView = (props: any) => {
     welcomeBaycode={
       <Card
         title={<>How we can <C>help you</C></>}>
-          <><p>Our mission is to help businesses and organizations to secure and grow their systems, as well as protect their data from cyber threats. We offer a range of services from providing software solutions, to identifying vulnerabilities, assessing risk, and improving security posture of a business.</p><br/>
+          <><p>Our mission is to help businesses and organizations to secure and grow their systems, as well as protect their data from cyber threats. We offer a range of services from providing software solutions, to identifying vulnerabilities, and improving security posture of a business.</p><br/>
           <p>We have a deep understanding of the latest cybersecurity technologies and techniques, as well as extensive experience in software development.</p><br/>
-          <p>Commitment to staying up-to-date with the latest industry trends and best practices, in order to secure you is our priority. </p><br/>
+          <p>Commitment to staying up-to-date with the latest industry trends and best practices, in order to be at your service is our priority. </p><br/>
           <p>Our expertise helps you succeed with your needs, whether it be a one-time penetration test, development of advanced startup greenfield application, API, brochure-ware, or ongoing support.</p></>
       </Card>
     }
@@ -68,9 +78,9 @@ const LandingPageView = (props: any) => {
     welcomePenetrationTest={
       <Card title={<>Penetration <C>Tests</C> </>}>
         <><p>We offer both internal and external penetration tests to help businesses and organizations identify vulnerabilities and assess their risk of cyber attack.</p><br/>
-        <p>Internal penetration testing, also known as "white box testing", simulates an attack from within an organization's network. This type of testing is useful for identifying vulnerabilities that may be exploited by malicious insiders or attackers who have gained access to the network.</p><br/>
-        <p>External penetration testing, also known as "black box testing", simulates an attack from outside an organization's network. This type of testing is useful for identifying vulnerabilities that may be exploited by external attackers who are attempting to gain access to the network from the internet.</p><br/>
-        <p>Contact us today to learn more about our internal and external penetration testing services and how they can help protect your business from cyber threats.</p></>
+        <p>Internal penetration testing simulates an attack from within an organization's network. This type of testing is useful for identifying vulnerabilities that may be exploited by malicious insiders or attackers who have gained access to the network.</p><br/>
+        <p>External penetration testing simulates an attack from outside an organization's network. This type of testing is useful for identifying vulnerabilities that may be exploited by external attackers who are attempting to gain access to the network from the internet.</p><br/>
+        <p>Contact us to learn more about our internal and external penetration testing services and how they can help protect your business from cyber threats.</p></>
       </Card>
     }
 
@@ -78,11 +88,9 @@ const LandingPageView = (props: any) => {
       <Card
         title={<>Custom <C>Software</C></>}
         >
-        <><p>We believe in the power of agile software development methodologies to deliver high-quality software on time and on budget. Agile methodologies, such as Scrum and Kanban, are designed to be flexible, responsive, and customer-focused, allowing for rapid development and delivery of software products.</p><br/>
-        <p>In an agile software development process, teams work in short sprints, focusing on delivering small increments of software that add value to the end user. This approach allows for quick feedback and iteration, resulting in a product that is more closely aligned with the needs and desires of the customer.</p><br/>
-        <p>We deliver APIs that allow different systems and applications to communicate with each other. This is an essential part of modern software development and is often used to create integrations between different systems or to expose data and functionality to third parties.</p><br/>
-        <p>Our expertise in cloud development and cloud security allows us to deliever secure, compliant cloud-based solutions, including those built on Microsoft Azure.</p><br/>
-        <p>Whether you need a custom business application, a frontend for a web application, mobile application, or a backend to power an API, our team has the skills and expertise to help you succeed. Whatever you need, we get you there.</p><br/></>
+        <><p>We believe in the power of agile software development methodologies to deliver high-quality software on time and on budget. Agile methodologies, such as Scrum and Kanban, are designed to be flexible, responsive, and customer-focused, allowing for rapid development and delivery of software products. Our team works in short sprints, focusing on delivering small increments of software that add value to the end user. This approach allows for quick feedback and iteration, resulting in a product that is more closely aligned with the needs and desires of the customer.</p><br/>
+        <p>We deliver APIs that allow different systems and applications to communicate with each other. This is an essential part of modern software development and is often used to create integrations between different systems or to expose data and functionality to third parties. Additionally, our expertise in cloud development and cloud security allows us to deliver secure, compliant cloud-based solutions, including those built on Microsoft Azure.</p><br/>
+        <p>We have the skills and expertise to help you succeed in any kind of software development project, whether it is a custom business application, a frontend for a web application, mobile application, or a backend to power an API. We are committed to delivering high-quality, secure and user-friendly software, whatever your needs are, we have the team that will help you get there.</p></>
       </Card>  
     }
 
@@ -100,11 +108,9 @@ const LandingPageView = (props: any) => {
       <Card
         title={<>Automated <C>monitoring</C></>}
        ><>
-          <p>Baycode Security offers cybersecurity services that utilize SOAR to provide automated threat hunting and cyber-monitoring.</p><br/>
-          <p>SOAR is a tool that utilizes Artificial Intelligence, and helps organizations to automate and streamline their security processes by proactively searching for and identifying potential threats within a network. It uses security feed data to adjust its rules and proactively seeks out emerging threats.</p><br/>
-          <p>Host-based agents will be configured to work by monitoring and collecting data of the activity on the host machine, allowing for increased visibility and security. This data can then be put into SIEM, and analyzed by SOAR platform to identify and respond to potential threats.</p><br/>
-          <p>The secure infrastructure will utilize firewalls as a barrier to block or allow incoming and outgoing traffic based on predefined security rules, while intrusion detection systems monitor network activity to detect and alert on suspicious activity.</p><br/>
-          <p>Let the technology work with you, before it works against you.</p><br/>
+          <p>Baycode Security offers cutting-edge cybersecurity services that utilize Security Orchestration, Automation and Response (SOAR) technology to provide automated threat hunting and real-time monitoring. </p><br/>
+          <p>SOAR is a powerful tool that utilizes Artificial Intelligence and Machine Learning to proactively identify and respond to potential threats within a network. By leveraging security feed data and host-based agents, our team can quickly and effectively detect and respond to emerging threats, providing increased visibility and security for your organization.</p><br/>
+          <p>Trust us to let the technology work for you and secure your business.</p><br/>
         </>
       </Card>
     }
@@ -116,7 +122,6 @@ const LandingPageView = (props: any) => {
           <p>Our expert team offers training and workshops to help individuals and organizations stay safe online, counting per person.</p><br/> 
           <p>Our courses range from beginner-level courses that cover the basics of cyber-security and how to protect against common threats, to more in-depth course for experienced professionals, covering advanced topics such as penetration testing and software development. </p><br/>
           <p>We can tailor a workshop to fit the specific needs of your organization.</p><br/>
-          <p>Press the button below to browse available workshops and dates, or order a custom workshop.</p><br/>
         </>
       </Card>
     }

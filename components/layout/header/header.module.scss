@@ -21,13 +21,13 @@
   background-color: $black;
 }
 
-@media screen and (max-width: 1060px) {
+@media screen and (max-width: 870px) {
   .hiddenMobile {
     display: none !important;
   }
 }
 
-@media screen and (min-width: 1060px) {
+@media screen and (min-width: 870px) {
   .hiddenDesktop {
     display: none !important;
   }
@@ -60,7 +60,6 @@
 .menuEntry:hover {
   color: $accent;
   cursor:pointer;
-
 }
 
 

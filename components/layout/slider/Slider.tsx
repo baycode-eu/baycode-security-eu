@@ -30,21 +30,18 @@ class Slider extends React.Component {
             onStateChange={(state) => this.handleStateChange(state)}
         >
           <a onClick={() => this.closeMenu()} href={process.env.BLOG} className={styles.menuEntry}>
-            Blog
+            News
           </a>
-          <a onClick={() => this.closeMenu()} href="/workshops" className={styles.menuEntry}>
+          {/* <a onClick={() => this.closeMenu()} href="/workshops" className={styles.menuEntry}>
             Workshops
-          </a>
-          <a onClick={() => this.closeMenu()} href="/proactive-defense-soar" className={styles.menuEntry}>
-            SOAR
-          </a>          
+          </a>          */}
           <a onClick={() => this.closeMenu()} href="/penetration-testing" className={styles.menuEntry}>
             Penetration Testing
           </a>
-          <a onClick={() => this.closeMenu()} href={'/custom-software'} className={styles.menuEntry}>
+          <a onClick={() => this.closeMenu()} href={process.env.SOLUTIONS} className={styles.menuEntry}>
             Custom Software
           </a>
-          <a onClick={() => this.closeMenu()} href="/contact" className={[styles.contact, styles.menuEntry].join(" ")}>
+          <a onClick={() => this.closeMenu()} href="/quote" className={[styles.contact, styles.menuEntry].join(" ")}>
             Get a Quote
           </a>
         </Menu>

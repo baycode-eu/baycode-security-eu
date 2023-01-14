@@ -15,9 +15,9 @@ export default (props: any) => (
     <ul className={styles.domain}>
       <li>🔍 Penetration Tests</li>
       <li>💻 Custom Software</li>
-      <li>📱 App Security Testing</li>
-      <li>🛡️ SOAR</li>
-      <li>🎓 Workshops</li>
+      {/* <li>📱 App Security Testing</li> */}
+      {/* <li>🛡️ SOAR</li> */}
+      {/* <li>🎓 Workshops</li> */}
       <li>💼 Consultancy</li>
     </ul>
     <div className={styles.quote}>

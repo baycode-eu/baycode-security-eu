@@ -1,25 +1,29 @@
 import React, { useEffect } from "react"
 import {Swiper, SwiperSlide} from "swiper/react"
-import { EffectCoverflow, Grid, Pagination } from "swiper";
+import { EffectCoverflow } from "swiper";
 import CarouselArticle from "./CarouselArticle"
 
 import "swiper/css";
 
 import { useState } from 'react';
-import { setConstantValue } from "typescript";
 
 export default (props) => {
   const [amountOfSlides, setAmountOfSlides] = useState(3);
-  
-  useEffect(()=> {
+  const setAmountOfSlidesFunc = () => {
+    if (window.innerWidth >= 1200) {
+      setAmountOfSlides(4)
+    } else if (window.innerWidth >= 800) {
+      setAmountOfSlides(3)
+    } else if (window.innerWidth >= 560) {
+      setAmountOfSlides(2)
+    } else {
+      setAmountOfSlides(1)
+    }
+  }
+  useEffect(() => {
+    setAmountOfSlidesFunc()
     window.addEventListener('resize', ()=> {
-      if (window.innerWidth >= 800) {
-        setAmountOfSlides(3)
-      } else if (window.innerWidth >= 600) {
-        setAmountOfSlides(2)
-      } else {
-        setAmountOfSlides(1)
-      }
+      setAmountOfSlidesFunc()
     })
   }, [])
 

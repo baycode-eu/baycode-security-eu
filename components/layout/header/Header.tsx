@@ -17,21 +17,17 @@ const Header = (props: any) => {
           <a href={process.env.BLOG} className={styles.menuEntry}>
             News
           </a>
-          <a href="/workshops" className={styles.menuEntry}>
+          {/* <a href="/workshops" className={styles.menuEntry}>
             Workshops
-          </a>
-          <a href="/proactive-defense-soar" className={styles.menuEntry}>
-            SOAR
-          </a>          
+          </a>       */}
           <a href="/penetration-testing" className={styles.menuEntry}>
             Penetration Tests
           </a>
-          <a href="/custom-software" className={styles.menuEntry}>
+          <a href={process.env.SOLUTIONS} className={styles.menuEntry}>
             Custom Software
           </a>
-          <a href="/contact" className={[styles.contact, styles.menuEntry].join(" ")}>
+          <a href="/quote" className={[styles.contact, styles.menuEntry].join(" ")}>
             <span className={styles.hiddenBreak}><Button smol primary>Get a Quote</Button></span>
-            {/* <a className={styles.visibleBreak}>Get a Quote</a> */}
           </a>
         </div>
     </div>   

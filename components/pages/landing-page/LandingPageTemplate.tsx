@@ -12,10 +12,11 @@ export default (props: any) => {
     welcomeDevelopedApplicationsSecurityImage,
     hero,
     getQuote,
-    getBlog,
+    getWorkshops,
     welcomeSoftwareEngineering,
     welcomeSoftwareEngineeringImage,
     blogCarousel,
+    browseBlog,
     welcomeSoarSiemImage,
     welcomeSoarSiem,
     welcomeWorkshops,
@@ -99,7 +100,7 @@ export default (props: any) => {
               </div>
             </div>
           </div>
-          <div className={styles.textSection}>
+          {/* <div className={styles.textSection}>
             <div className={styles.left}>
               <div>
                 <img alt={"none"} className={styles.imageSection} src={welcomeWorkshopsImage.src}></img>
@@ -108,14 +109,19 @@ export default (props: any) => {
             <div className={styles.right}>
               {welcomeWorkshops}
             </div>
-          </div>
+          </div> */}
         </section>
       </FadeIn>
-      <section className={styles["get-a-quote"]}>
-        {getBlog}
-      </section>
+      {/* <section className={styles["get-a-quote"]}>
+        {getWorkshops}
+      </section> */}
       <section className={styles.blogCarousel}>
-        {blogCarousel}
+        <div className="carousel">
+          {blogCarousel}
+        </div>
+        <div className={styles["get-a-blog"]}>
+          {browseBlog}
+        </div>
       </section>
     </div>
   </Layout>

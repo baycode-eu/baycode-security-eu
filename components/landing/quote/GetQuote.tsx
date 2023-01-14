@@ -1,11 +1,11 @@
 import * as React from "react"
 import styles from "./get-quote.module.scss";
 
-export default ({textQuoteDevelopment, getQuote}: {textQuoteDevelopment: any, getQuote:any }) => {
+export default ({textQuoteDevelopment, getQuote}: {textQuoteDevelopment: any, getQuote?:any }) => {
   return <>
-  <div className="quote-development-buttons">
+  <div className={styles.quoteDevelopmentButtons}>
     <div className={styles.quote}>{getQuote}</div>
   </div>
-  <div className="text-quote">{textQuoteDevelopment}</div>
+  {textQuoteDevelopment && <div className={styles.textQuote}>{textQuoteDevelopment}</div>}
   </>
 }
