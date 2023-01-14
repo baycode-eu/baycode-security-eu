@@ -108,7 +108,7 @@ const LandingPageView = (props: any) => {
       <Card
         title={<>Automated <C>monitoring</C></>}
        ><>
-          <p>Baycode Security offers cutting-edge cybersecurity services that utilize Security Orchestration, Automation and Response (SOAR) technology to provide automated threat hunting and real-time monitoring. </p><br/>
+          <p>Baycode offers cutting-edge cybersecurity services that utilize Security Orchestration, Automation and Response (SOAR) technology to provide automated threat hunting and real-time monitoring. </p><br/>
           <p>SOAR is a powerful tool that utilizes Artificial Intelligence and Machine Learning to proactively identify and respond to potential threats within a network. By leveraging security feed data and host-based agents, our team can quickly and effectively detect and respond to emerging threats, providing increased visibility and security for your organization.</p><br/>
           <p>Trust us to let the technology work for you and secure your business.</p><br/>
         </>

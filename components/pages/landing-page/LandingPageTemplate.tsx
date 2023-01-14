@@ -46,11 +46,11 @@ export default (props: any) => {
             <div className={styles.left}>
               <div>
                 <img alt={"none"} className={styles.imageSection}
-                  src={welcomePenetrationTestImage.src} />
+                  src={welcomeSoftwareEngineeringImage.src} />
               </div>
             </div>
             <div className={styles.right}>
-              {welcomePenetrationTest}
+              {welcomeSoftwareEngineering}
             </div>
           </div>
         </section>
@@ -64,12 +64,12 @@ export default (props: any) => {
         <section id="landing-tiles-2" className="landing-tiles-2">
           <div className={styles.textSection}>
             <div className={styles.left}>
-              {welcomeSoftwareEngineering}
+              {welcomePenetrationTest}
             </div>
             <div className={styles.right}>
               <div>
                 <img alt={"none"} className={styles.imageSection}
-                  src={welcomeSoftwareEngineeringImage.src} />
+                  src={welcomePenetrationTestImage.src} />
               </div>
             </div>
           </div>
