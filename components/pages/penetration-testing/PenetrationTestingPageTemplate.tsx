@@ -8,7 +8,7 @@ const PenetrationTestingTemplate = (props) => {
                 <div className={styles.penetrationTestingInternalAssessment}>
                     {props.internalInfrastructurePenetrationTestingAssessment}
                 </div>
-                <div>
+                <div className={styles.penetrationTestingExternalAssessment}>
                     {props.externalInfrastructurePenetrationTestingAssessment}
                 </div>
             </div>

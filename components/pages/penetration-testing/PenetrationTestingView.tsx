@@ -39,7 +39,7 @@ const PenetrationTestingView = () => {
         internalInfrastructurePenetrationTestingAssessment={
             <Card title={<>Internal Infrastructure <C>Penetration Testing</C></>}>
                 <p>Penetration test of your internal infrastructure will evaluate your vital internal networks to uncover any security flaws and deficiencies. These networks may be used regularly to transmit sensitive information, access vital business services, and store highly confidential data.</p><br/>
-                <p>Typically, the starting point of an internal network penetration test is a user with standard access privileges. Internal Penetration test can be followed by External Penetration Test</p><br/>
+                <p>Typically, the starting point of an internal network penetration test is a user with standard access privileges. Internal Penetration test can be followed by External Penetration Test.</p><br/>
                 <p>Baycode will assess the security posture of various aspects of your internal infrastructure, including:</p>
                 <ul>
                     <li>- User Workstations</li>

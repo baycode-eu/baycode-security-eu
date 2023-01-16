@@ -8,12 +8,30 @@
  text-align: center;
 }
 
-.penetrationTestingTemplate {
-    margin-top: 32px;
-}
 .penetrationTestingInternalAssessment {
-    margin-bottom: 32px;
+    margin-top: 16px;
+}
+.penetrationTestingExternalAssessment {
+    margin-top: 16px;
+}
+
+.penetrationTestingAssessment {
+    display: flex;
     margin-top: 32px;
+
+    flex-wrap: wrap;
+    // flex-grow: 50%;
+    // flex: 1;
+}
+
+.penetrationTestingAssessment > * {
+    flex: 1;
+}
+
+@media screen and (max-width: 600px) {
+    .penetrationTestingAssessment > * {
+        flex: 1 1 auto;
+    }
 }
 
 .process {
