@@ -90,7 +90,7 @@ export default (props: any) => {
       </section>
       <FadeIn toLeft>
         <section>
-          <div className={styles.textSection}>
+          {/* <div className={styles.textSection}>
             <div className={styles.left}>
               {welcomeSoarSiem}
             </div>
@@ -99,7 +99,7 @@ export default (props: any) => {
                 <img alt={"none"} className={styles.imageSection} src={welcomeSoarSiemImage.src}></img>
               </div>
             </div>
-          </div>
+          </div> */}
           {/* <div className={styles.textSection}>
             <div className={styles.left}>
               <div>
