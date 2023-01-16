@@ -12,9 +12,9 @@ const CustomSoftware = (props) => {
           <link rel="shortcut icon" href="favicon.svg" />
         </Head>
         <main>
-          <SoftwareEngineeringView/>
+          {/* <SoftwareEngineeringView/> */}
         </main>
       </>
     )
   }
-export default PenetrationTesting;
+export default CustomSoftware;
