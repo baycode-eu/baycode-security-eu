@@ -7,47 +7,26 @@
  margin-bottom: 64px;
  text-align: center;
 }
-
-// @media screen and (max-width: 600px) {
-//     .penetrationTestingInternalAssessment {
-//         margin-top: 16px;
-//     }
-// }
-
-// .penetrationTestingExternalAssessment {
-//     margin-top: 16px;
-// }
-
-.penetrationTestingAssessment {
-    display: flex;
-    @media screen and (max-width: 600px) {
-        margin-top:16px;
-    }
+.limitlessPossibilities {
     margin-top: 32px;
-    gap: 16px;
-    flex-wrap: wrap;
 }
-
-.penetrationTestingAssessment > * {
-    flex: 1;
+.kanban {
+    margin-top: 32px;
 }
-
-@media screen and (max-width: 600px) {
-    .penetrationTestingAssessment > * {
-        flex: 1 1 auto;
-        
-    }
-}
-
 .process {
     margin-top: 32px;
 }
-
-.webApplicationTesting {
-    margin-top: 32px;
-
-    @media screen and (max-width: 600px) {
-        margin-top: 16px;
-    }
+.agileImage {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
-
+.agileImage > * {
+    width: 100%;
+    height: auto;
+    max-width: 1200px;
+    margin-bottom: 32px;
+    margin-top: 32px;
+}

@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import { Inter } from '@next/font/google'
 import LandingPageView from 'components/pages/landing-page/LandingPageView'
-const inter = Inter({ subsets: ['latin'] })
 import { Posts } from '../api/wordpress';
 import ogimage from "public/site_black.png";
 
@@ -19,7 +18,7 @@ export default function Home(props) {
         <meta property="og:url" content="https://baycode.eu" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="og:description" content="Our mission is to help businesses and organizations to secure and grow their systems, as well as protect their data from cyber threats. Our team of experts uses industry-leading techniques to simulate real-world attacks and provide actionable recommendations for improving security as well as software to tailor your needs." />
-        <meta property="og:site_name" content="baycode.eu" />
+        <meta property="og:site_name" content="Baycode" />
         <meta name="twitter:image:alt" content="Baycode Logo" />
       </Head>
       <main>
