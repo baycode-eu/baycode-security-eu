@@ -25,9 +25,9 @@ const CustomSoftwareView = () => {
             <h3>0. Consultation and Requirements Gathering:</h3>
             <p>The process begins with a consultation, where we work with you to understand your requirements and goals.</p><br/>
             <h3>1. Analysis and Risk Assessment:</h3>
-            <p>We conduct a thorough analysis of the project and assess any potential risks.</p><br/>
+            <p>We conduct a thorough analysis of the project and assess any potential risks. The solution proposal quote is sent to you.</p><br/>
             <h3>2. Design and Planning</h3>
-            <p>Based on the analysis, we design a solution that aligns with your requirements and goals. The proposal is sent to you.</p><br/>
+            <p>Based on the analysis, we design a solution that aligns with your requirements and goals.</p><br/>
             <h3>3. Implementation and Development</h3>
             <p>Our team of experts begins implementation using agile development methodologies for rapid delivery and flexibility. The sprint results are presented to you every two weeks.</p><br/>
             <h3>4. Testing and Quality Assurance:</h3>
