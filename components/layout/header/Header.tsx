@@ -32,7 +32,6 @@ const Header = (props: any) => {
         </div>
     </div>   
   </div>
-
 }
 
 export default Header;

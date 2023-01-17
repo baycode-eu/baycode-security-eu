@@ -1,6 +1,6 @@
 import Card from "components/ui/molecules/common/Card";
 import React from "react"
-import PenetrationTestingTemplate from "./PenetrationTestingPageTemplate"
+import PenetrationTestingTemplate from "./PenetrationTestingTemplate"
 import C from "components/ui/atoms/ColorText";
 import GetQuote from "components/landing/quote/GetQuote";
 import { Button } from "components/ui/atoms/button/Button";
