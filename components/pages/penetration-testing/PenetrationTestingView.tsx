@@ -36,6 +36,21 @@ const PenetrationTestingView = () => {
                 </div>
             </Card>
         }
+        webPenetrationTest={
+            <Card title={<>Web Application <C>Penetration Testing</C></>}>
+                <p>A web application penetration test will thoroughly evaluate your websites or web applications to identify security vulnerabilities and weaknesses that could be exploited by cybercriminals to gain unauthorized access to sensitive data or to disrupt normal functionality. </p><br/>
+                <p>This testing simulates real-world attack scenarios and aims to identify and prioritize vulnerabilities based on their potential impact and likelihood of exploitation, so that appropriate measures can be taken to remediate them.</p><br/>
+                <p>Baycode's team will thoroughly evaluate your web applications using OWASP Top 10 standards and identify and prioritize vulnerabilities, including newly discovered ones (Zero-Days).</p><br/>
+                <p>Web Application testing services are performed remotely.</p>
+            </Card>
+        }
+        mobilePenetrationTest={
+            <Card title={<>Mobile Application <C>Penetration Testing</C></>}>
+                <p>Trust Baycode to secure your mobile applications with our comprehensive mobile application security testing service. We assess for vulnerabilities and weaknesses on both Android and iOS platforms. Our testing simulates real-world attack scenarios to uncover vulnerabilities that, if exploited, could lead to unauthorized access to sensitive data.</p><br/>
+                <p>Our team of experts use both static and dynamic test cases, along with a detailed testing methodology, to evaluate not only the security of the application build but also how the application interacts with connected environments.</p><br/>
+                <p>Our mobile application security testing service is usually performed remotely, simulating real-world attacks over the internet from any location.</p>
+            </Card>
+        }
         internalInfrastructurePenetrationTestingAssessment={
             <Card title={<>Internal Infrastructure <C>Penetration Testing</C></>}>
                 <p>Penetration test of your internal infrastructure will evaluate your vital internal networks to uncover any security flaws and deficiencies. These networks may be used regularly to transmit sensitive information, access vital business services, and store highly confidential data.</p><br/>
@@ -76,7 +91,7 @@ const PenetrationTestingView = () => {
         cta={
             <>
                 <GetQuote
-                    textQuoteDevelopment={<h2>Get a quote and improve your security posture now</h2>}
+                    textQuoteDevelopment={"Get a quote and improve your security posture"}
                     getQuote={<Button primary>Get a Quote</Button>}
                  />
             </>

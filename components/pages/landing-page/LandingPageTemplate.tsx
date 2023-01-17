@@ -12,15 +12,15 @@ export default (props: any) => {
     welcomeDevelopedApplicationsSecurityImage,
     hero,
     getQuote,
-    getWorkshops,
+    // getWorkshops,
     welcomeSoftwareEngineering,
     welcomeSoftwareEngineeringImage,
     blogCarousel,
     browseBlog,
-    welcomeSoarSiemImage,
-    welcomeSoarSiem,
-    welcomeWorkshops,
-    welcomeWorkshopsImage
+    // welcomeSoarSiemImage,
+    // welcomeSoarSiem,
+    // welcomeWorkshops,
+    // welcomeWorkshopsImage
   } = props
 
   return <Layout hero={hero}>

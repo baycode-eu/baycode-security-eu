@@ -23,7 +23,7 @@ const Header = (props: any) => {
           <a href="/penetration-testing" className={styles.menuEntry}>
             Penetration Tests
           </a>
-          <a href={process.env.SOLUTIONS} className={styles.menuEntry}>
+          <a href='/custom-software' className={styles.menuEntry}>
             Custom Software
           </a>
           <a href="/quote" className={[styles.contact, styles.menuEntry].join(" ")}>

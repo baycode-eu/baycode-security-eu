@@ -1,16 +1,16 @@
-import LandingPageTemplate from "./LandingPageTemplate";
+import BlogCarousel from "components/carousel/BlogCarousel";
+import Hero from "components/landing/Hero";
+import GetQuote from "components/landing/quote/GetQuote";
+import { Button } from "components/ui/atoms/button/Button";
+import C from "components/ui/atoms/ColorText";
+import Card from "components/ui/molecules/common/Card";
+import builder from "public/builder.png";
 import hacker from "public/hacker-3.png";
 import hackersuit from "public/hackersuit.png";
 import locked from "public/locked.png";
 import lockedKey from "public/lockedkey.png";
-import builder from "public/builder.png";
 import review from "public/review.png";
-import Card from "components/ui/molecules/common/Card";
-import Hero from "components/landing/Hero";
-import C from "components/ui/atoms/ColorText";
-import GetQuote from "components/landing/quote/GetQuote";
-import { Button } from "components/ui/atoms/button/Button";
-import BlogCarousel from "components/carousel/BlogCarousel";
+import LandingPageTemplate from "./LandingPageTemplate";
 
 const LandingPageView = (props: any) => {
   return <LandingPageTemplate
@@ -20,9 +20,11 @@ const LandingPageView = (props: any) => {
       getQuote={<GetQuote
         textQuoteDevelopment={""}
         getQuote={
-          <Button primary>
-            Get a free quote
-          </Button>
+          <a href="/quote">
+            <Button primary>
+              Get a free quote
+            </Button>
+          </a>
         }
       />}
       onQuote={props.redirectToQuote}
@@ -37,9 +39,11 @@ const LandingPageView = (props: any) => {
     getQuote={<GetQuote
       textQuoteDevelopment={""}
       getQuote={
-        <Button primary>
-          Get a free quote
-        </Button>
+        <a href="/quote">
+          <Button primary>
+            Get a free quote
+          </Button>
+        </a>
       }
     />}
     getWorkshops={
@@ -77,10 +81,9 @@ const LandingPageView = (props: any) => {
 
     welcomePenetrationTest={
       <Card title={<>Penetration <C>Tests</C> </>}>
-        <><p>We offer both internal and external penetration tests to help businesses and organizations identify vulnerabilities and assess their risk of cyber attack.</p><br/>
-        <p>Internal penetration testing simulates an attack from within an organization's network. This type of testing is useful for identifying vulnerabilities that may be exploited by malicious insiders or attackers who have gained access to the network.</p><br/>
-        <p>External penetration testing simulates an attack from outside an organization's network. This type of testing is useful for identifying vulnerabilities that may be exploited by external attackers who are attempting to gain access to the network from the internet.</p><br/>
-        <p>Contact us to learn more about our internal and external penetration testing services and how they can help protect your business from cyber threats.</p></>
+        <><p>Our team of experts uses the latest tools and techniques to identify vulnerabilities in your network, systems, and applications. Our goal is to help you understand the risks and threats facing your organization and provide actionable recommendations to improve your security posture.</p><br/>
+        <p>Our services include external and internal network testing, web and mobile application testing, social engineering, and wireless network testing. We offer customizable packages to meet your specific needs.</p><br/>
+        <p>Take the first step towards improving your organization's cyber security by scheduling a test with us today.</p></>
       </Card>
     }
 
@@ -88,19 +91,18 @@ const LandingPageView = (props: any) => {
       <Card
         title={<>Custom <C>Software</C></>}
         >
-        <><p>We believe in the power of agile software development methodologies to deliver high-quality software on time and on budget. Agile methodologies, such as Scrum and Kanban, are designed to be flexible, responsive, and customer-focused, allowing for rapid development and delivery of software products. Our team works in short sprints, focusing on delivering small increments of software that add value to the end user. This approach allows for quick feedback and iteration, resulting in a product that is more closely aligned with the needs and desires of the customer.</p><br/>
-        <p>We deliver APIs that allow different systems and applications to communicate with each other. This is an essential part of modern software development and is often used to create integrations between different systems or to expose data and functionality to third parties. Additionally, our expertise in cloud development and cloud security allows us to deliver secure, compliant cloud-based solutions, including those built on Microsoft Azure.</p><br/>
-        <p>We have the skills and expertise to help you succeed in any kind of software development project, whether it is a custom business application, a frontend for a web application, mobile application, or a backend to power an API. We are committed to delivering high-quality, secure and user-friendly software, whatever your needs are, we have the team that will help you get there.</p></>
+        <><p>We specialize in agile software development, using methods like Scrum and Kanban to deliver high-quality software on time and within budget. Our team works in short sprints, focusing on delivering valuable software increments and gathering customer feedback for quick iteration. </p><br/>
+        <p>We offer API development for system integration and cloud-based solutions, including those built on Microsoft Azure, with a focus on security and compliance. </p><br/>
+        <p>Trust us to deliver the best software for your business, from custom applications to frontend and mobile development to API backends.</p></>
       </Card>  
     }
 
     welcomeDevelopedApplicationsSecurity={
       <Card
         title={<>Code <C>Review</C></>}
-      > <><p>We understand the importance of testing the security of developed applications and the role that code review plays in this process. In today's digital landscape, it is crucial for businesses and organizations to ensure that their software is secure and protected from potential cyber threats.</p><br/>
-          <p>By testing the security of your developed applications and conducting thorough code reviews, you can ensure that your software is robust and resistant to potential threats. This not only protects your business and your customers, but it also helps to maintain trust and confidence in your products and services.</p><br/>
-          <p>When integrating these practices into your workflow, you can identify and address vulnerabilities early on, resulting in a more secure and reliable final product.</p><br/>
-          <p>Contact us today to learn more about our app security testing services and how they can help protect your business from cyber threats.</p><br/>
+      > <><p>Ensure the security of your software with our app security testing and code review services. We understand the importance of testing for potential vulnerabilities and the role it plays in protecting your business, customers, and the sensitive data they entrust you with.</p><br/>
+          <p>By identifying and addressing potential threats early on, we can help you deliver a more secure and reliable final product, while maintaining the trust and confidence in your products and services.</p><br/>
+          <p>Contact us to learn more about our app security testing services and how they can help protect your business from cyber threats.</p><br/>
       </></Card>
     }
 

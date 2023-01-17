@@ -2,26 +2,30 @@
  display: flex;
  align-items: center;
  flex-direction: column;
- justify-content: center;   
+ justify-content: center;
  margin-top: 32px;
  margin-bottom: 64px;
  text-align: center;
 }
 
-.penetrationTestingInternalAssessment {
-    margin-top: 16px;
-}
-.penetrationTestingExternalAssessment {
-    margin-top: 16px;
-}
+// @media screen and (max-width: 600px) {
+//     .penetrationTestingInternalAssessment {
+//         margin-top: 16px;
+//     }
+// }
+
+// .penetrationTestingExternalAssessment {
+//     margin-top: 16px;
+// }
 
 .penetrationTestingAssessment {
     display: flex;
+    @media screen and (max-width: 600px) {
+        margin-top:16px;
+    }
     margin-top: 32px;
-
+    gap: 16px;
     flex-wrap: wrap;
-    // flex-grow: 50%;
-    // flex: 1;
 }
 
 .penetrationTestingAssessment > * {
@@ -31,10 +35,19 @@
 @media screen and (max-width: 600px) {
     .penetrationTestingAssessment > * {
         flex: 1 1 auto;
+        
     }
 }
 
 .process {
     margin-top: 32px;
+}
+
+.webApplicationTesting {
+    margin-top: 32px;
+
+    @media screen and (max-width: 600px) {
+        margin-top: 16px;
+    }
 }
 
