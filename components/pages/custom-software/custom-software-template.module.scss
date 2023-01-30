@@ -8,7 +8,11 @@
  text-align: center;
 }
 .limitlessPossibilities {
-    margin-top: 32px;
+    margin-top: 64px;
+
+    @media screen and (max-width: 800px) {
+        margin-top: 32px;
+    }
 }
 .kanban {
     margin-top: 32px;

@@ -23,7 +23,7 @@
     @media screen and (max-width: 600px) {
         margin-top:16px;
     }
-    margin-top: 32px;
+    margin-top: 64px;
     gap: 16px;
     flex-wrap: wrap;
 }
@@ -32,7 +32,14 @@
     flex: 1;
 }
 
-@media screen and (max-width: 600px) {
+.penetrationTestingTemplate {
+    margin-top: 64px;
+}
+
+@media screen and (max-width: 800px) {
+    .penetrationTestingTemplate {
+        margin-top: 32px;
+    }
     .penetrationTestingAssessment > * {
         flex: 1 1 auto;
         
@@ -44,10 +51,5 @@
 }
 
 .webApplicationTesting {
-    margin-top: 32px;
-
-    @media screen and (max-width: 600px) {
-        margin-top: 16px;
-    }
 }
 

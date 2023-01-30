@@ -1,8 +1,46 @@
 import Head from "next/head";
 import React from "react"
 import ogimage from "public/site_black.png";
+import QuoteView from "components/pages/quote/QuoteView";
+import { useFormik } from "formik";
+import * as yup from "yup"
 
 const Quote = (props) => {
+    const formik = useFormik({
+      initialValues: {
+        name: '',
+        email: '',
+        phone: '',
+        subject: '',
+        message: '',
+        captcha: ''
+      },
+      onSubmit: async (values, {setSubmitting, setErrors}) => {
+        setSubmitting(true)
+        console.log(values)
+        const response = await fetch(
+          process.env.QUOTE_ENDPOINT_URL, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(values),
+          }
+        )
+        console.log(response)
+        console.log("XD")
+        setSubmitting(false)   
+        window.location.assign("/quote/success") 
+      },
+      validationSchema: yup.object().shape({
+        name: yup.string().required("Required"),
+        email: yup.string().email("Invalid Email").required("Required"),
+        phone: yup.string().notRequired(),
+        subject: yup.string().required("Required"),
+        message: yup.string().required("Required")
+      })
+    })
+
     return (
       <>
         <Head>
@@ -20,7 +58,7 @@ const Quote = (props) => {
           <meta name="twitter:image:alt" content="Baycode Logo" />
         </Head>
         <main>
-          {/* <PenetrationTestingView/> */}
+          {<QuoteView formik={formik}/>}
         </main>
       </>
     )

@@ -72,17 +72,16 @@ const LandingPageView = (props: any) => {
     welcomeBaycode={
       <Card
         title={<>How we can <C>help you</C></>}>
-          <><p>Our mission is to help businesses and organizations to secure and grow their systems, as well as protect their data from cyber threats. We offer a range of services from providing software solutions, to identifying vulnerabilities, and improving security posture of a business.</p><br/>
-          <p>We have a deep understanding of the latest cybersecurity technologies and techniques, as well as extensive experience in software development.</p><br/>
+          <><p>Our mission is to help organizations to grow their business through expert software engineering services and secure their systems to protect their data from cyber threats. We specialize in creating custom software solutions that meet your unique needs and ensure your systems are robust, reliable, and secure.</p><br/>
           <p>Commitment to staying up-to-date with the latest industry trends and best practices, in order to be at your service is our priority. </p><br/>
-          <p>Our expertise helps you succeed with your needs, whether it be a one-time penetration test, development of advanced startup greenfield application, API, brochure-ware, or ongoing support.</p></>
+          <p>Our expertise helps you succeed with your needs, whether it be a one-time penetration test, development of advanced startup greenfield application, API, or ongoing support.</p></>
       </Card>
     }
 
     welcomePenetrationTest={
       <Card title={<>Penetration <C>Tests</C> </>}>
         <><p>Our team of experts uses the latest tools and techniques to identify vulnerabilities in your network, systems, and applications. Our goal is to help you understand the risks and threats facing your organization and provide actionable recommendations to improve your security posture.</p><br/>
-        <p>Our services include external and internal network testing, web and mobile application testing, social engineering, and wireless network testing. We offer customizable packages to meet your specific needs.</p><br/>
+        <p>Our services include external and internal network testing, web application testing, social engineering, and wireless network testing. We offer customizable packages to meet your specific needs.</p><br/>
         <p>Take the first step towards improving your organization's cyber security by scheduling a test with us today.</p></>
       </Card>
     }

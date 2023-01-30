@@ -14,7 +14,7 @@ export default (props: any) => {
           <div className="caro-mask"></div>
         </div>
       </section>}
-    <div className={"page"} id="page-wrap">
+    <div className={`page`} id="page-wrap">
       <div className="pageContents">
         {props.children}
       </div>

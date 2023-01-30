@@ -1,0 +1,31 @@
+@import "styles/colors";
+@import "styles/layout";
+
+.successView {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 100%;
+  padding: 8px;
+  text-align: center;
+}
+.success {
+  color: rgb(131, 192, 131);
+  font-size: calc( 42px + 2vw);
+  @media screen and (min-width: 1000px) {
+    font-size: 72px;
+  }
+  font-family: Poppins;
+}
+.respond {
+  margin-top: 16px;
+  font-size: calc(24px + 2vw);
+  @media screen and (min-width: 1000px) {
+    font-size: 42px;
+  }
+}
+.goBackButton {
+  margin-top: 32px;
+}

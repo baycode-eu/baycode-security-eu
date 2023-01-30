@@ -8,7 +8,8 @@ const nextConfig = {
   env: {
     BLOG: process.env.BLOG,
     WORDPRESS_API_URL: process.env.WORDPRESS_API_URL,
-    SOLUTIONS: process.env.SOLUTIONS
+    SOLUTIONS: process.env.SOLUTIONS,
+    QUOTE_ENDPOINT_URL: process.env.QUOTE_ENDPOINT_URL
   },
 }
 

@@ -10,8 +10,8 @@ import styles from "./custom-software-template.module.scss"
 const CustomSoftwareView = () => {
     return <CustomSoftwareTemplate
         limitlessPossibilities={
-            <Card title={<>Limitless <C>Possibilities</C></>}>
-                <p>Unlock limitless possibilities with Baycode software engineering services. Our team of experts specializes in delivering custom software solutions that meet your unique needs. Whether you need a frontend for a web application, a backend to power your API, a mobile application, or cloud-based solutions, we have the skills and expertise to bring your vision to life. We use agile development methodologies to ensure rapid delivery and flexibility, and our solutions are designed to be user-friendly and secure.</p>
+            <Card title={<>Tailored <C>Solutions</C></>}>
+                <p>Our team of experts specializes in delivering custom software solutions that meet your unique needs. Whether you need a frontend for a web application, a backend to power your API, a mobile application, or cloud-based solutions, we have the skills and expertise to bring your vision to life. We use agile development methodologies to ensure rapid delivery and flexibility, and our solutions are designed to be user-friendly and secure.</p>
             </Card>
         }
         kanban={<Card title={<>Agile + <C>Scrum</C></>}>
@@ -37,11 +37,11 @@ const CustomSoftwareView = () => {
             <p>We understand the importance of communication and collaboration throughout the software development process. That's why we keep you updated every step of the way and involve you in the decision-making process, to ensure that the final product meets your needs and exceeds your expectations.</p>
         </Card>}
         cta={
-            <>
+            <><a href="/quote" >
                 <GetQuote
                     textQuoteDevelopment={"Get a quote and take the first step towards achieving your goals"}
                     getQuote={<Button primary>Get a Quote</Button>}
-                 />
+                 /></a>
             </>
         }
     />

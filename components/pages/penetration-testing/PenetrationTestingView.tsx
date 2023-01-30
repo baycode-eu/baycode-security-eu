@@ -89,11 +89,11 @@ const PenetrationTestingView = () => {
             </Card>
         }
         cta={
-            <>
+            <><a href="/quote">
                 <GetQuote
                     textQuoteDevelopment={"Get a quote and improve your security posture"}
                     getQuote={<Button primary>Get a Quote</Button>}
-                 />
+                 /></a>
             </>
         }
     />
