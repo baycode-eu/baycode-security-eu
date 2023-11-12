@@ -1,10 +1,11 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import crypto from 'crypto';
-
+const TelegramBot = require('node-telegram-bot-api');
 const sendMessage = async ({ name, email, phone, subject, message }) => {
+  const bot = new TelegramBot(process.env.TELEGRAM_BOT_TOKEN);
+
   const id = crypto.randomBytes(16).toString('hex');
   const telegramMessage = `ID/${id}/ID\nNew Contact Form Submission\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nSubject: ${subject}\nMessage: ${message}`;
-  const telegramApiUrl = `https://api.telegram.org/bot${process.env.TELEGRAM_BOT_TOKEN}/sendMessage`;
   const base64EncodedKey = process.env.PUBLIC_KEY;
   const decodedKey = Buffer.from(base64EncodedKey, 'base64').toString('utf-8');
 
@@ -28,24 +29,16 @@ const sendMessage = async ({ name, email, phone, subject, message }) => {
 
   // Convert the encrypted message and encrypted symmetric key to base64-encoded strings
   const encryptedMessageBase64 = encryptedMessage.toString('base64');
-
-  const telegramParams = new URLSearchParams({
-    text: `${encryptedSymmetricKey};;${encryptedMessageBase64}`,
-    chat_id: process.env.TELEGRAM_CHAT_ID,
-  });
-
-  await fetch(`${telegramApiUrl}?${telegramParams.toString()}`, {
-    method: 'POST',
-  });
+  await bot.sendMessage(process.env.TELEGRAM_CHAT_ID, `${encryptedSymmetricKey};;${encryptedMessageBase64}`)
 };
 
-export default function handler(
+const handler = async (
   request: NextApiRequest,
   response: NextApiResponse,
-) {
+) => {
   const {name, email, phone, subject, message} = request.body
 
-  sendMessage({name, email, phone, subject, message})
+  await sendMessage({name, email, phone, subject, message})
 
   response.status(200).json({
     body: request.body,
@@ -53,3 +46,5 @@ export default function handler(
     cookies: request.cookies,
   });
 }
+
+export default handler
