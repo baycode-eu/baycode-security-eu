@@ -1,0 +1,87 @@
+.stack {
+  z-index: 1;
+
+  & > .heading {
+    margin-bottom: 16px;
+    font-weight: 800;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 24px;
+  }
+
+  & > .services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 32px;
+    z-index: 1;
+
+    & > h2 {
+      font-weight: 800;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 16px;
+    }
+
+    & > ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      min-height: 32px;
+      letter-spacing: 2px;
+
+      & > li {
+        padding: 8px;
+      }
+    }
+  }
+
+  & > .tools {
+    z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    & a {
+      color: black;
+    }
+
+    & > * {
+      margin-top: 16px;
+      margin-right: 16px;
+
+      @media screen and (max-width: 800px) {
+        width: 50%;
+        margin-right: 0;
+      }
+
+      @media screen and (min-width: 800px) and (max-width: 1200px) {
+        width: 33%;
+        margin-right: 0;
+      }
+
+      & > * {
+        margin-bottom: 16px;
+      }
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      font-size: 14px;
+      letter-spacing: 2px;
+      margin-bottom: 16px;
+
+      & > li {
+        margin-bottom: 8px;
+      }
+
+      & > li > ul {
+        margin-top: 8px;
+        margin-left: 8px;
+      }
+    }
+  }
+}

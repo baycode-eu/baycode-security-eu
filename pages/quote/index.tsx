@@ -27,13 +27,11 @@ const Quote = (props) => {
             body: JSON.stringify(values),
           }
         )
-        console.log(response)
-        console.log("XD")
         setSubmitting(false)   
         window.location.assign("/quote/success") 
       },
       validationSchema: yup.object().shape({
-        name: yup.string().required("Required"),
+        name: yup.string().notRequired(),
         email: yup.string().email("Invalid Email").required("Required"),
         phone: yup.string().notRequired(),
         subject: yup.string().required("Required"),

@@ -1,0 +1,226 @@
+[
+  {
+    "title": "Backend",
+    "children": [
+      {
+        "title": "TypeScript"
+      },
+      {
+        "title": "JavaScript",
+        "children": [
+          {
+            "title": "Node",
+            "children": [
+              {
+                "title": "Express.js"
+              },
+              {
+                "title": "Nest.js"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "PHP",
+        "children": [
+          {
+            "title": "Symfony"
+          },
+          {
+            "title": "Laravel",
+            "children": [
+              {
+                "title": "Lumen"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Python",
+        "children": [
+          {
+            "title": "Flask"
+          },
+          {
+            "title": "Django"
+          }
+        ]
+      },
+      {
+        "title": "Golang"
+      }
+    ]
+  },
+  {
+    "title": "Frontend",
+    "children": [
+      {
+        "title": "React.js",
+        "children": [
+          {
+            "title": "Next.js"
+          }
+        ]
+      },
+      {
+        "title": "Vue.js",
+        "children": [
+          {
+            "title": "Nuxt.js"
+          }
+        ]
+      },
+      {
+        "title": "jQuery"
+      },
+      {
+        "title": "HTML5",
+        "children": [
+          {
+            "title": "SCSS"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Mobile",
+    "children": [
+      {
+        "title": "React Native",
+        "children": [
+          {
+            "title": "iOS",
+            "children": [
+              {
+                "title": "TestFlight"
+              }
+            ]
+          },
+          {
+            "title": "Android"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "E-commerce",
+    "children": [
+      {
+        "title": "Sylius"
+      },
+      {
+        "title": "Prestashop"
+      },
+      {
+        "title": "Shopify"
+      }
+    ]
+  },
+  {
+    "title": "Databases",
+    "children": [
+      {
+        "title": "MongoDB"
+      },
+      {
+        "title": "MySQL"
+      },
+      {
+        "title": "PostgreSQL"
+      },
+      {
+        "title": "Neo4j"
+      }
+    ]
+  },
+  {
+    "title": "Message Brokers",
+    "children": [
+      {
+        "title": "RabbitMQ"
+      },
+      {
+        "title": "Kafka"
+      },
+      {
+        "title": "Redis"
+      }
+    ]
+  },
+  {
+    "title": "Cloud Services",
+    "children": [
+      {
+        "title": "Azure"
+      },
+      {
+        "title": "Google Cloud"
+      },
+      {
+        "title": "Algolia"
+      },
+      {
+        "title": "Firebase"
+      },
+      {
+        "title": "ElasticSearch"
+      },
+      {
+        "title": "AWS"
+      },
+      {
+        "title": "Webflow"
+      }
+    ]
+  },
+  {
+    "title": "DevOps",
+    "children": [
+      {
+        "title": "Kubernetes"
+      },
+      {
+        "title": "Docker"
+      },
+      {
+        "title": "Terraform"
+      },
+      {
+        "title": "Vercel"
+      },
+      {
+        "title": "Ansible"
+      },
+      {
+        "title": "Git",
+        "children": [
+          {
+            "title": "CircleCI"
+          },
+          {
+            "title": "GitLab CI"
+          },
+          {
+            "title": "Github Actions"
+          }
+        ]
+      },
+      {
+        "title": "Nginx"
+      },
+      {
+        "title": "Apache"
+      },
+      {
+        "title": "Bash"
+      }, 
+      {
+        "title":"Powershell"
+      }
+    ]
+  }
+]

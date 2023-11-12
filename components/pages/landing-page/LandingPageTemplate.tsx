@@ -2,25 +2,22 @@ import * as React from "react";
 import Layout from "components/layout/layout";
 import styles from "./landing-page-template.module.scss";
 import FadeIn from "../../animations/FadeIn"
+import Stack from "components/tools/Stack";
+import whoami from "public/whoami.jpg";
+
 export default (props: any) => {
   const {
     welcomeBaycode,
-    welcomeBaycodeImage,
     welcomePenetrationTest,
     welcomePenetrationTestImage,
-    welcomeDevelopedApplicationsSecurity,
-    welcomeDevelopedApplicationsSecurityImage,
     hero,
-    getQuote,
-    // getWorkshops,
+    getPentest,
+    getSocial,
     welcomeSoftwareEngineering,
     welcomeSoftwareEngineeringImage,
     blogCarousel,
     browseBlog,
-    // welcomeSoarSiemImage,
-    // welcomeSoarSiem,
-    // welcomeWorkshops,
-    // welcomeWorkshopsImage
+    stackData
   } = props
 
   return <Layout hero={hero}>
@@ -37,84 +34,56 @@ export default (props: any) => {
             </div>
             <div className={styles.right}>
               <div>
-                <img className={styles.imageSection}
-                  src={welcomeBaycodeImage.src} />
+              <img style={{ borderRadius: "86px", filter: "contrast(1.3) brightness(1.2) grayscale(1)" }} className={styles.imageSection}
+                  src={whoami.src} />
               </div>
             </div>
           </div>
-          <div className={styles.textSection}>
-            <div className={styles.left}>
-              <div>
-                <img alt={"none"} className={styles.imageSection}
-                  src={welcomeSoftwareEngineeringImage.src} />
+            <div id="software-engineering-section" className={styles.textSection}>
+              <div className={styles.left}>
+                <div>
+                  {welcomeSoftwareEngineeringImage}
+                </div>
+              </div>
+              <div className={styles.right}>
+                {welcomeSoftwareEngineering}
               </div>
             </div>
-            <div className={styles.right}>
-              {welcomeSoftwareEngineering}
-            </div>
-          </div>
+      
         </section>
       </FadeIn>
-      {/* <FadeIn> */}
-      <section className={styles["get-a-quote"]}>
-        {getQuote}
-      </section>
-      {/* </FadeIn> */}
       <FadeIn>
-        <section id="landing-tiles-2" className="landing-tiles-2">
+      <section id="landing-tiles" className={"landing-pad"}>
+        <div>
+          <Stack stack={stackData}></Stack>
+        </div>
+        <div>
+          <h3>And more. Checkout my GitHub and LinkedIn page.</h3>
+          <section className={styles["get-a-quote"]}>
+            {getSocial}
+          </section>
+        </div>
+      </section>
+      </FadeIn>
+      <FadeIn>
+        <section id="penetration-tests" className="landing-tiles-2">
           <div className={styles.textSection}>
             <div className={styles.left}>
               {welcomePenetrationTest}
             </div>
             <div className={styles.right}>
               <div>
-                <img alt={"none"} className={styles.imageSection}
+                <img alt={"none"} style={{borderRadius: "80px"}} className={styles.imageSection}
                   src={welcomePenetrationTestImage.src} />
               </div>
-            </div>
-          </div>
-          <div className={styles.textSection}>
-            <div className={styles.left}>
-              <div>
-                <img alt={"none"} className={styles.imageSection} src={welcomeDevelopedApplicationsSecurityImage.src}></img>
-              </div>
-            </div>
-            <div className={styles.right}>
-              {welcomeDevelopedApplicationsSecurity}
             </div>
           </div>
         </section>
       </FadeIn>
       <section className={styles["get-a-quote"]}>
-        {getQuote}
+        {getPentest}
       </section>
-      <FadeIn toLeft>
-        <section>
-          {/* <div className={styles.textSection}>
-            <div className={styles.left}>
-              {welcomeSoarSiem}
-            </div>
-            <div className={styles.right}>
-              <div>
-                <img alt={"none"} className={styles.imageSection} src={welcomeSoarSiemImage.src}></img>
-              </div>
-            </div>
-          </div> */}
-          {/* <div className={styles.textSection}>
-            <div className={styles.left}>
-              <div>
-                <img alt={"none"} className={styles.imageSection} src={welcomeWorkshopsImage.src}></img>
-              </div>
-            </div>
-            <div className={styles.right}>
-              {welcomeWorkshops}
-            </div>
-          </div> */}
-        </section>
-      </FadeIn>
-      {/* <section className={styles["get-a-quote"]}>
-        {getWorkshops}
-      </section> */}
+      
       <section className={styles.blogCarousel}>
         <div className="carousel">
           {blogCarousel}

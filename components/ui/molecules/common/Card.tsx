@@ -11,9 +11,10 @@ const Card = (props: Props) => {
   const {children, title} = props;
 
   return <div className={[styles.card, ""].join(" ")}>
-    <><h2 className={styles.title}>
+    <>
+    <div className={styles.title}>
       {title}
-    </h2>
+    </div>
     <div className={styles.contents}>
       {children}
     </div>

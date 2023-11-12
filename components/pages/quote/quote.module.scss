@@ -6,16 +6,17 @@
   margin-top: 16px;
   width: 100%;
   justify-content: center;
-  max-width: 1600px;
+  max-width: 1800px;
   padding: 16px;
   // flex-wrap: wrap;
 }
 
 .quote {
   display: flex;
-  max-width: 1000px;
+  max-width: 1400px;
   width: 100%;
   gap: 48px;
+  line-height: 20px;
 
   @media screen and (max-width: 800px) {
     flex-wrap: wrap;
@@ -42,20 +43,20 @@
 
 .contactUs {
   flex: 1;
-  flex-basis: 1 1 0.3;
-  width: 100%;
+  flex-basis: 1 1 0.5;
   margin: 0 0 32px 0;
-  height: 160px;
+  width:100%;
 }
 
 .form {
-  flex: 1 1 0.7;
-  width: 100%;
+  max-width:77%;
+  width:50%;
+  flex: 1 1 0.5;
   margin: 0 0 32px 0;
 }
 
 .section {
-  background-color: rgb(24, 24, 42);
+  background-color: #0a0a0a;
   padding: 32px;
   border-radius: 16px;
   min-width: 300px;

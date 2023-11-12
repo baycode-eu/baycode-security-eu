@@ -12,12 +12,12 @@ export default (props: any) => (
       <li className={`${styles.threatsout}`}>{props.subtitle}</li>
     </ul>
     <ul className={styles.domain}>
-      <li>🔍 Penetration Tests</li>
       <li>💻 Custom Software</li>
+      <li>🛡️ Application Security</li>
+      <li>🔍 Penetration Tests</li>
       {/* <li>📱 App Security Testing</li> */}
       {/* <li>🛡️ SOAR</li> */}
       {/* <li>🎓 Workshops</li> */}
-      <li>💼 Consultancy</li>
     </ul>
     <div className={styles.quote}>
       {props.getQuote}

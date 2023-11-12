@@ -32,17 +32,14 @@ class Slider extends React.Component {
           <a onClick={() => this.closeMenu()} href={process.env.BLOG} className={styles.menuEntry}>
             News
           </a>
-          {/* <a onClick={() => this.closeMenu()} href="/workshops" className={styles.menuEntry}>
-            Workshops
-          </a>          */}
-          <a onClick={() => this.closeMenu()} href="/penetration-testing" className={styles.menuEntry}>
+          <a onClick={() => this.closeMenu()} href="/#penetration-tests" className={styles.menuEntry}>
             Penetration Testing
           </a>
-          <a onClick={() => this.closeMenu()} href="/custom-software" className={styles.menuEntry}>
+          <a onClick={() => this.closeMenu()} href="/#software-engineering-section" className={styles.menuEntry}>
             Custom Software
           </a>
           <a onClick={() => this.closeMenu()} href="/quote" className={[styles.contact, styles.menuEntry].join(" ")}>
-            Get a Quote
+            Contact
           </a>
         </Menu>
     }

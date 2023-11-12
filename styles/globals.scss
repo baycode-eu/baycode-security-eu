@@ -1,12 +1,16 @@
 @import "./colors.scss";
 @import "./fonts.scss";
 @import "./components/form-input.scss";
+@import "./components/stack.scss";
 
 body {
   line-height: 1;
   font-family: $font;
   font-size: $font-size;
   overflow-x: hidden;
+}
+h1 {
+  line-height: 48px;
 }
 @keyframes gradient {
   0% {

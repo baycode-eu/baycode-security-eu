@@ -6,13 +6,19 @@ $mobile-width: 533px;
 $max-width: 1600px;
 $min-height: 86vh;
 
+.landing-pad {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
 .page {
   width:100%;
   min-height: $min-height;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(34, 34, 69);
+  //background-color: rgb(34, 34, 69);
+  background-color: "#4a4a4a";
 }
 
 .page-alternative {
@@ -26,26 +32,94 @@ $min-height: 86vh;
   width: 100%;
 }
 
+.white-section-parent {
 
-@media screen and (max-width: $max-width) {
-  // .landing-tiles {
-  //   padding: 0px 16px 0 8px;
-  // }
-
-  // .landing-tiles-2 {
-  //   padding: 0px 16px 0 8px;
-  // }
+  position: relative;
 }
 
-@media screen and (max-width:$mobile-width) {
-  // .landing-tiles {
-  //   padding: 0px 8px 0 8px;
-  // }
-  // .landing-tiles-2 {
-  //   padding: 0px 8px 0 8px;
-  // }
+.white-section {
+  
 }
 
+#white-section-overlay {
+  //background-color:rgb(136, 105, 198);
+  background: linear-gradient(
+    -2deg,
+    transparent 9.8%,  /* Middle color start, adjust as needed */
+    #0975C3 10%,  /* Middle color end, adjust as needed */
+    #0975C3 89.8%,  /* End of middle color, adjust as needed */
+    transparent 90%,  /* Start of last color, adjust as needed */
+    transparent 100%  /* End color, adjust as needed */
+  );
+  position: absolute;
+  top: 1450px;
+  width: 100%;
+  z-index: -999;
+  height: 900px;
+
+  @media screen  and (min-width: 1200px) and (max-width: 1600px) { 
+    top:1500px;
+  }
+
+  @media screen  and (min-width: 1000px) and (max-width: 1200px) { 
+    top:1450px;
+    height: 1200px;
+  }
+
+  @media screen  and (min-width: 800px) and (max-width: 1000px) { 
+    top:1850px;
+    height: 1600px;
+  }
+
+  @media screen  and (min-width: 600px) and (max-width: 800px) { 
+    top:1850px;
+    height: 1400px;
+  }
+
+  @media screen  and (min-width: 530px) and (max-width: 650px) { 
+    top:1900px !important;
+    height: 1400px !important;
+  }
+
+  @media screen  and (max-width: 530px) { 
+    top:1650px !important;
+    height: 1200px !important;
+  }
+
+  @media screen and (max-width: 600px) { 
+    top:1600px;
+    height: 1400px;
+  }
+}
+
+.badges {
+  display: flex;
+  width: 100%;
+  margin-top: 32px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.badge {
+  width: 140px;
+  height: 140px;
+  border-radius: 100px;
+
+  @media screen and (max-width: 500px) {
+    width: 110px;
+    height: 110px;
+  }
+}
+
+#software-engineering-section {
+  margin-top: 300px;
+  margin-bottom: 200px;
+  color: black;
+
+  @media screen and (max-width: 500px) {
+    margin-bottom: 50px;
+  }
+}
 
 .main {
   display: flex;

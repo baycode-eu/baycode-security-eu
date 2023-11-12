@@ -20,6 +20,7 @@ const QuoteForm = ({formik}) => {
                 title="Email address"
                 id="email"
                 type="email"
+                required
                 name="email"
                 onChange={formik.handleChange}
                 value={formik.values.email}
@@ -38,6 +39,7 @@ const QuoteForm = ({formik}) => {
             />
             <FormInput
                 title="Subject"
+                required
                 id="subject"
                 type="text"
                 name="subject"
@@ -50,6 +52,7 @@ const QuoteForm = ({formik}) => {
             <FormInput
                 title="Message"
                 id="message"
+                required
                 textarea="true"
                 name="message"
                 onChange={formik.handleChange}

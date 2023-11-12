@@ -3,7 +3,7 @@
 .asterisk {
   font-size:16px;
   font-weight: bolder;
-  color: red;
+  color: #f28482;
 }
 .form-input {
   color: white;
@@ -16,19 +16,23 @@
 
   & > .form-input-input {
     width: 100%;
+    color: #80ed99;
     // height: 32px;
     padding: 8px;
-    background-color: rgb(33, 50, 85);
+    background-color: #1a1a1a;
     border-radius: 4px;
     outline: none;
+    font-family: "Lucida Console", Arial, Helvetica, sans-serif;
     border: black;
   }
 
   & > .form-input-textarea {
     width: 100%;
+    color: #80ed99;
     min-height: 100px;
+    font-family: "Lucida Console", Arial, Helvetica, sans-serif;
     padding: 8px;
-    background-color: rgb(33, 50, 85);
+    background-color: #1a1a1a;
     border-radius: 4px;
     outline: none;
     border: black;
@@ -36,7 +40,7 @@
 
   .error {
     //&.title {
-    color: red;
+    color: #f28482ed;
     //}
     &.error-data {
       margin-top:8px;

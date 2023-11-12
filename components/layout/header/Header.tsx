@@ -20,10 +20,10 @@ const Header = (props: any) => {
           {/* <a href="/workshops" className={styles.menuEntry}>
             Workshops
           </a>       */}
-          <a href="/penetration-testing" className={styles.menuEntry}>
+          <a href="/#penetration-tests" className={styles.menuEntry}>
             Penetration Tests
           </a>
-          <a href='/custom-software' className={styles.menuEntry}>
+          <a href='/#software-engineering-section' className={styles.menuEntry}>
             Custom Software
           </a>
           <a href="/quote" className={[styles.contact, styles.menuEntry].join(" ")}>
