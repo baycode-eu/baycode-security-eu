@@ -20,7 +20,7 @@ const QuoteView = ({formik}) => {
                         </div>
                         <div>
                             <p>Or use the contact form to notify me instantly</p><br/>
-                            <h3>What information do you need to respond back?</h3><br/>
+                            <h3>What information do I to respond back?</h3><br/>
                             <p>Please provide your email address for communication. If you prefer an alternative method (XMPP etc.), enter it in the Full Name field along with a placeholder dummie email address. This field is mandatory to ensure you don't forget to fill it, and receive a response. Thank you!</p><br/>
                             <h3>How does it work?</h3><br/>
                             <p>Your message will be random symmetric key AES-256 bit encrypted, and sent via a secure serverless Next.js cloud function to a Telegram bot, which will store the encrypted message and a public key encrypted symmetric key in a specific chat room and notify me. I'll retrieve, and decrypt your message using a custom client.</p><br/>
