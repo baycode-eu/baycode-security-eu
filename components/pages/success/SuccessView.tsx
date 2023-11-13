@@ -9,7 +9,7 @@ const SuccessView = (props) => {
         <FadeIn>
             <div className={[styles.successView, ].join(' ')}>
                 <h1 className={styles.success}>Success</h1>
-                <h3 className={styles.respond}>We will respond to you soon</h3>
+                <h3 className={styles.respond}>I will respond to you soon</h3>
                 <a href="/">
                     <Button class={styles.goBackButton} primary>Continue</Button>
                 </a>
