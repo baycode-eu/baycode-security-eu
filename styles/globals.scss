@@ -23,3 +23,31 @@ h1 {
     background-position: 0% 50%;
   }
 }
+
+details {
+  margin-bottom: 10px;
+}
+
+summary {
+  cursor: pointer;
+  outline: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+summary::before {
+  content: '►'; /* Default arrow for closed state */
+  margin-right: 10px; /* Adjust the spacing between the arrow and the text */
+  transition: transform 0.3s; /* Add a smooth transition for the arrow */
+}
+
+details[open] summary::before {
+  transform: rotate(90deg); /* Rotate arrow for open state */
+}
+
+details > p {
+  margin-top: 0;
+}
