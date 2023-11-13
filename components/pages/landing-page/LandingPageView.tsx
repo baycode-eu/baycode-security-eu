@@ -15,6 +15,8 @@ import securityplus from "public/securityplus.png";
 import cysa from "public/cysa.png";
 
 import animationData from "public/softwareengianim.json";
+import cyberAnimData from "public/cyber.json";
+
 import Lottie from "lottie-react";
 import LandingPageTemplate from "./LandingPageTemplate";
 import stackData from "public/stack.json"
@@ -62,7 +64,11 @@ const LandingPageView = (props: any) => {
       loop={true}
     />}
     welcomeDevelopedApplicationsSecurityImage={review}
-    welcomePenetrationTestImage={baycode2}
+    welcomePenetrationTestImage={<Lottie
+      animationData={cyberAnimData}
+      className="flex justify-center items-center"
+      loop={true}
+    />}
     welcomeSoarSiemImage={lockedKey}
     welcomeWorkshopsImage={hackersuit}
     getQuote={<GetQuote
@@ -106,7 +112,7 @@ const LandingPageView = (props: any) => {
       >
           <><p>My name is Krystian Bajno, I'm a software developer and cyber security specialist (appsec, netsec). This little space on the web is where technology meets personality, and I'm thrilled to have you here.</p><br/>
           <p>My domain covers full-stack software engineering as well as penetration tests and implementing S-SDLC programmes.</p><br/>
-          <a href='/portfolio'><Button primary>Browse portfolio</Button></a>
+          <a href='/portfolio'><Button primary>Browse portfolio</Button></a><a style={{marginLeft: "16px"}} href="/quote" ><Button primary>Contact</Button></a>
           <div className={"badges"}>
               <img alt={"none"} 
                   src={pnpt.src} 
@@ -131,10 +137,10 @@ const LandingPageView = (props: any) => {
       <Card title={<h1># Security <C>Assessments</C></h1>}>
         <>
         <h3>Cooperation</h3>
-        <p>Imagine me, armed with the latest tools and techniques, persistently uncovering vulnerabilities in your network, systems, and applications. My goal? To make the unseen risks visible and provide you with personalized, actionable recommendations.</p>
+        <p>Picture me utilizing cutting-edge tools and techniques to systematically identify vulnerabilities within your network, systems, and applications. My objective? Revealing hidden risks and delivering tailored, practical recommendations to enhance your security posture.</p>
         <br/>
         <h3>Tailored Solutions</h3>
-        <p>No generic and automatic Nessus-and-goodbye scans here. I offer a range of services, from external and internal network testing to scrutinizing web applications, social engineering, and S-SDLC programmes. It's not just a service; it's a proactive strategy crafted exclusively for your needs.</p>
+        <p>No generic and automatic Nessus-and-goodbye scans here. I offer a range of services, from external and internal network testing to scrutinizing web applications, social engineering/phishing, and S-SDLC programmes. It's not just a service; it's a proactive strategy crafted exclusively for your needs.</p>
         <br/>
         <h3>Let's Boost Your Cyber Armor</h3>
         <p>Ready to enhance your organization's cyber defense? Take the first step by scheduling a call with me today.</p>

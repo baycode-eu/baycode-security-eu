@@ -27,15 +27,19 @@ const Quote = (props) => {
             body: JSON.stringify(values),
           }
         )
-        setSubmitting(false)   
-        window.location.assign("/quote/success") 
+        setSubmitting(false)
+
+        if (response.ok === true) {
+          window.location.assign("/quote/success") 
+        }
       },
       validationSchema: yup.object().shape({
         name: yup.string().notRequired(),
         email: yup.string().email("Invalid Email").required("Required"),
         phone: yup.string().notRequired(),
         subject: yup.string().required("Required"),
-        message: yup.string().required("Required")
+        message: yup.string().required("Required"),
+        captcha: yup.string().required("Required")
       })
     })
 

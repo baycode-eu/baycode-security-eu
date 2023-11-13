@@ -4,6 +4,7 @@ import styles from "./landing-page-template.module.scss";
 import FadeIn from "../../animations/FadeIn"
 import Stack from "components/tools/Stack";
 import whoami from "public/whoami.jpg";
+import { Button } from "components/ui/atoms/button/Button";
 
 export default (props: any) => {
   const {
@@ -69,19 +70,25 @@ export default (props: any) => {
         <section id="penetration-tests" className="landing-tiles-2">
           <div className={styles.textSection}>
             <div className={styles.left}>
+              <div>
               {welcomePenetrationTest}
+              <div style={{display: "flex", justifyContent:"center", marginTop: "32px", alignItems:"center"}}><a  href="/quote" >
+                <Button primary>Schedule a call</Button>
+               </a></div>
+              
+              </div>
+           
             </div>
             <div className={styles.right}>
-              <div>
-                <img alt={"none"} style={{borderRadius: "80px"}} className={styles.imageSection}
-                  src={welcomePenetrationTestImage.src} />
+              <div style={{maxWidth: "650px" }}>
+                {welcomePenetrationTestImage} 
               </div>
             </div>
           </div>
         </section>
       </FadeIn>
       <section className={styles["get-a-quote"]}>
-        {getPentest}
+        {getPentest} 
       </section>
       
       <section className={styles.blogCarousel}>

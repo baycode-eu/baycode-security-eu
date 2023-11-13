@@ -1,6 +1,32 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import crypto from 'crypto';
 const TelegramBot = require('node-telegram-bot-api');
+
+const validateCaptcha = async(captcha) => {
+  const captchaSecret = process.env.CAPTCHA_SECRET
+
+  try {
+    // Verify the CAPTCHA with the reCAPTCHA API using fetch
+    const response = await fetch('https://www.google.com/recaptcha/api/siteverify', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      body: `secret=${captchaSecret}&response=${captcha}`,
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      return true
+    } else {
+      return false
+    }
+  } catch (error) {
+    return false
+  }
+
+}
 const sendMessage = async ({ name, email, phone, subject, message }) => {
   const bot = new TelegramBot(process.env.TELEGRAM_BOT_TOKEN);
 
@@ -36,7 +62,17 @@ const handler = async (
   request: NextApiRequest,
   response: NextApiResponse,
 ) => {
-  const {name, email, phone, subject, message} = request.body
+  const {name, email, phone, subject, message, captcha} = request.body
+
+  const captchaGood = await validateCaptcha(captcha)
+
+  if (!captchaGood) {
+    return response.status(400).json({
+      body: request.body,
+      query: request.query,
+      cookies: request.cookies,
+    });
+  }
 
   await sendMessage({name, email, phone, subject, message})
 

@@ -5,6 +5,7 @@ import styles from "./quote-form.module.scss"
 import ReCAPTCHA from "react-google-recaptcha";
 
 const QuoteForm = ({formik}) => {
+    // const captchaPublicKey = process.env.CAPTCHA_PUBLIC_KEY
     return <form onSubmit={formik.handleSubmit} className={styles.quoteForm}>
         <div className={styles.row}>
             <FormInput
@@ -62,7 +63,7 @@ const QuoteForm = ({formik}) => {
         </div>
         <div className={styles.row}>
             <ReCAPTCHA
-                sitekey="6LeaZjskAAAAAA1Wn-PIo6rL6ZoJl1naoG4iyH5q"
+                sitekey={"6LeaZjskAAAAAA1Wn-PIo6rL6ZoJl1naoG4iyH5q"}
                 onChange={v => formik.setFieldValue('captcha', v)}
             />
         </div>
