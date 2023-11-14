@@ -1,0 +1,222 @@
+[
+  {
+    "id": "6",
+    "title": "AveTravel",
+    "description": "A trip reservation, company, reporting, and employee management system.",
+    "technologies": ["Laravel", "Vue.js", "Nuxt.js", "jQuery"],
+    "activities": [
+      "Developed a comprehensive trip reservation, company, reporting, and employee management system",
+      "Built a custom administration panel from scratch using modern technologies",
+      "Refactored API and front-end components (admin panel, client panel)",
+      "Architected core systems, reservation flow, and payment processes",
+      "Contributed to business meetings, estimating, and analyzing needs"
+    ],
+    "company": "Liteweb",
+    "hashtags": []
+  },
+  {
+    "id": "7",
+    "title": "RestaurantDeal",
+    "description": "A platform for administering the best restaurants in Warsaw and reserving tables by customers at a good price.",
+    "technologies": ["Laravel", "Vue.js", "Nuxt.js", "React Native"],
+    "activities": [
+      "Developed a front site",
+      "Developed a platform for administering the best restaurants in Warsaw",
+      "Built Backend core with authentication, reports, payments, and management features, as well as customer endpoints including payments and disputes.",
+      "Developed a custom administration panel in modern technologies.",
+      "Created custom administration panels and front-end interfaces",
+      "Developed a mobile application equivalent of the front site",
+      "Contributed to business meetings, estimating, and analyzing needs"
+    ],
+    "company": "Liteweb",
+    "hashtags": []
+  },
+  {
+    "id": "8",
+    "title": "ChosenBy Storefront",
+    "description": "A shop offering premium brand clothing, jewelry, and accessory products.",
+    "technologies": ["Nuxt.js", "Vue.js", "Sylius", "Symfony"],
+    "activities": [
+      "Developed a shop offering premium brand clothing, jewelry, and accessories",
+      "Built a custom storefront from scratch using modern technologies",
+      "Created and implemented UI components based on UI design",
+      "Connected the store front to Symfony-based Sylius API"
+    ],
+    "company": "Liteweb",
+    "hashtags": []
+  },
+  {
+    "id": "10",
+    "title": "Focusly",
+    "description": "An application for guided meditation that helps people in finding themselves and calming their nerves.",
+    "technologies": ["React Native", "Laravel", "Firebase", "PHP"],
+    "activities": [
+    "Implemented UI components and app logic",
+    "Collaborated with backend developers from Daftcode",
+    "Conducted code reviews for the backend of Focusly",
+    "Refactored the guided meditation player",
+    "Refactored a mobile application, integrating logic and API services",
+    "Created and handled deep links",
+    "Integrated A/B testing",
+    "Implemented Apple/Android subscriptions"
+    ],
+    "company": "Liteweb, coop with Daftcode",
+    "hashtags": []
+    },
+    {
+    "id": "11",
+    "title": "SuccessMaker",
+    "description": "An app where you obtain a shortened version of wisdom from the popular self-improvement books.",
+    "technologies": ["React Native", "Laravel", "Firebase"],
+    "activities": [
+    "Refactored a mobile application for obtaining wisdom from self-improvement books",
+    "Integrated logic and API services",
+    "Created and implemented UI components based on UI/UX design",
+    "Configured App Store connection",
+    "Created and handled deep links",
+    "Implemented A/B testing",
+    "Implemented Apple/Android subscriptions"
+    ],
+    "company": "Liteweb, coop with DaftCode",
+    "hashtags": []
+    },
+    {
+    "id": "12",
+    "title": "Fitney",
+    "description": "An app that helps you in leading a healthy lifestyle and gives you training plans for workout.",
+    "technologies": ["React Native", "Laravel", "Firebase"],
+    "activities": [
+      "Developed and implemented UI components for a health and fitness mobile application",
+      "Integrated functionalities, Apple/Android subscriptions, and APIs",
+      "Created and handled deep links",
+      "Implemented A/B testing",
+      "Found solutions to challenging cases"
+    ],
+    "company": "Liteweb, coop with DaftCode",
+    "hashtags": []
+    },
+    {
+    "id": "13",
+    "title": "GeniusFormula & GoodTest",
+    "description": "A project on helping people find their talents and activities they love to do based on Gallup.",
+    "technologies": ["Lumen", "React Native", "React.js", "Python"],
+    "activities": [
+    "Developed APIs for the GeniusFormula and GoodTest applications, helping people find their talents and activities",
+    "Handled subscriptions, mailing, and crucial parts for a conversion process",
+    "Analyzed needs and architectured solutions at team meetings",
+    "Created the store/API layer codebase on the GeniusFormula mobile applications the developers were working later on. ",
+    "Hosted API instances and configured Cloud"
+    ],
+    "company": "Liteweb",
+    "hashtags": []
+    },
+    {
+    "id": "14",
+    "title": "Optimex Viscom",
+    "description": "A B2B and B2C platform for selling glasses of all kinds.",
+    "technologies": ["PrestaShop", "Mongo DB", "Node.js"],
+    "activities": [
+    "Code reviewed and mentored a front-end junior in creating a complex app",
+    "Created and hosted a server instance for back-end developers",
+    "Supported developers in working on the project",
+    "Analyzed needs and helped estimate needs on team meetings",
+    "Created, migrated, discussed, and worked on a large dataset of real product data",
+    "Set up stores and seeded the large dataset to PrestaShop and Sylius using MongoDB cache"
+    ],
+    "company": "Liteweb",
+    "hashtags": []
+    },
+    {
+    "id": "15",
+    "title": "Liteweb website",
+    "description": "Mentored a junior in creating his first commercial website.",
+    "technologies": ["React.js", "Next.js"],
+    "activities": ["Mentored a junior in creating a commercial website"],
+    "company": "Liteweb",
+    "hashtags": []
+    },
+    {
+      "id": "1",
+      "title": "Closed Door Security",
+      "description": "A blogging platform and a welcome site for a Scottish offensive cyber-security provider.",
+      "technologies": ["Lumen","Next.js","Wordpress"],
+      "activities": ["Gathered the business requirements", "Designed and implemented a secure blogging platform", "Developed a welcoming site for a Scottish offensive cyber-security provider"],
+      "company": "Closed Door Security",
+      "hashtags": [""]
+    },
+    {
+      "id": "1",
+      "title": "SilverCloud",
+      "description": "Created an internal C-suite app to extract information from CMS and make calculations on which products to focus on.",
+      "technologies": ["Python"],
+      "activities": ["Gathered the business requirements", "Extracted information from CMS API about selling, and made calculations based on several revenue, and cost based parameters", "Created, and saved the information into seperate database", "Presented the information"],
+      "company": "SilverCloud",
+      "hashtags": [""]
+    },
+    {
+      "id": "2",
+      "title": "Testywdomu.pl",
+      "description": "A shop where you can order bio-tests and diagnose yourself at home.",
+      "technologies": ["Shopify", "Nest.js"],
+      "activities": ["Developed an API integration with various bio-tests providers.", "Gathered the business requirements", "Developed and implemented the marketing and Google Analytics layer injected into Webflow and Shopify low-code shops"],
+      "company": "Targa",
+      "hashtags": []
+    },
+    {
+      "id": "2",
+      "title": "Zneonowani.pl",
+      "description": "A shop for a company selling neons.",
+      "technologies": ["Shopify"],
+      "activities": ["Gathered the business requirements", "Developed and implemented an e-commerce platform for neon products"],
+      "company": "",
+      "hashtags": []
+    },
+    {
+      "id": "4",
+      "title": "SwitchDraw",
+      "description": "A turn-based online drawing game. Developed a backend REST API for a mobile game - authentication, authorization, registration, game sessions, notifications.",
+      "technologies": ["Laravel"],
+      "activities": [
+        "Developed a backend REST API for a turn-based online drawing game",
+        "Implemented authentication, authorization, and registration features",
+        "Managed game sessions and notifications"
+      ],
+      "company": "Liteweb",
+      "hashtags": []
+    },
+    {
+      "id": "3",
+      "title": "Professional practice at AMFI International",
+      "description": "Helped create a company management system with a team from Italy and Spain.",
+      "technologies": ["HTML5", "PHP"],
+      "activities": [
+        "Contributed to the development of a company management system",
+        "Provided support to developers",
+        "Learned and adapted to a multicultural team environment"
+      ],
+      "company": "AMFI International",
+      "hashtags": ["practice"]
+    },
+    {
+      "id": "9",
+      "title": "Power EV",
+      "description": "A company specialized in electronics and chargers for EV cars.",
+      "technologies": ["Golang", "Python"],
+      "activities": [
+        "Researched and discovered methods to run code on a Robustel IoT in Go language"
+      ],
+      "company": "Liteweb",
+      "hashtags": []
+    },
+    {
+      "id": "5",
+      "title": "Pikassa",
+      "description": "A financial service offering loans.",
+      "technologies": ["Laravel"],
+      "activities": [
+        "Developed forms for estimating creditworthiness of borrowers"
+      ],
+      "company": "Liteweb",
+      "hashtags": []
+    }
+]

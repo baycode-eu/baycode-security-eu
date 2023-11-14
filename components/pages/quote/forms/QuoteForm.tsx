@@ -61,6 +61,20 @@ const QuoteForm = ({formik}) => {
                 error={formik.touched.message && formik.errors.message ? formik.errors.message : ''}
             />
         </div>
+        <div className={styles.row} style={{marginBottom: "16px"}}>
+            <FormInput
+                style={{textAlign:"left"}}
+                title="Data processing agreement"
+                id="agree"
+                name="agree"
+                required
+                value={formik.values.agree}
+                onChange={formik.handleChange}
+                type="checkbox"
+                label={<>I acknowledge that my data will be processed in accordance with the following <a style={{color: "#3a7afa"}} href="/files/Baycode%20Privacy%20Policy.pdf" alt="Privacy Policy"  target="_blank" rel="noopener noreferrer" >privacy policy</a>.</>}
+                error={formik.touched.agree && formik.errors.agree ? formik.errors.agree : ''}
+            />
+        </div>
         <div className={styles.row}>
             <ReCAPTCHA
                 sitekey={"6LeaZjskAAAAAA1Wn-PIo6rL6ZoJl1naoG4iyH5q"}

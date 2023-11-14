@@ -2,17 +2,23 @@
 @import "styles/layout.scss";
 
 .footer {
+  display: flex;
   // position: fixed;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   min-height:64px;
   border-bottom: 1px solid $header-split;
-  display: flex;
-  flex-direction: column;
+  flex-direction: row;
   background-color: $black;
 }
 
 .footer-contents {
   max-width: $site-width;
   width: 100%;
+}
+
+.footerSection {
+  display: flex;
+  margin-top: 8px;
+  margin-bottom: 16px;
 }

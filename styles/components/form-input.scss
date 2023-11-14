@@ -26,6 +26,10 @@
     border: black;
   }
 
+  .form-input-input[type=checkbox] {
+    width: 3%;
+  }
+
   & > .form-input-textarea {
     width: 100%;
     color: #80ed99;

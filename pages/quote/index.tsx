@@ -39,7 +39,8 @@ const Quote = (props) => {
         phone: yup.string().notRequired(),
         subject: yup.string().required("Required"),
         message: yup.string().required("Required"),
-        captcha: yup.string().required("Required")
+        captcha: yup.string().required("Required"),
+        agree: yup.bool().required("Required")
       })
     })
 

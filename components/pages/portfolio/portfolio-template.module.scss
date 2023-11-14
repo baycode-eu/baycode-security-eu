@@ -1,0 +1,103 @@
+.cta {
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+ justify-content: center;
+ margin-top: 32px;
+ margin-bottom: 64px;
+ text-align: center;
+}
+
+.head {
+    margin-left: 16px;
+    font-family: "Lucida Console", Arial, Helvetica, sans-serif;
+}
+
+@keyframes enlargeFont {
+    0% {
+        font-size: 24px;
+      
+    }
+    50% {
+        font-size: 28px;
+      
+    }
+    100% {
+        font-size: 24px;
+    }
+  }
+  
+  /* Apply the animation to an element with the class 'enlarge' */
+  .pentest-anim {
+    animation: enlargeFont 2s ease-in-out 2 forwards;
+    text-decoration: underline;
+  }
+
+  #pentest {
+    font-size: 24px;
+    @media screen and (max-width: 1000px) {
+        font-size: 18px;
+    }
+  }
+
+/* styles.module.css */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    font-family: "Lucida Console", Arial, Helvetica, sans-serif;
+  }
+  
+  .grid-item {
+    line-height: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .company {
+    margin-bottom: 12px;
+  }
+
+  .description {
+    margin-bottom: 16px;
+  }
+
+  .technologies {
+    margin-top:16px;
+  }
+
+  .certifications {
+    margin-left: 16px;
+    margin-bottom: 32px;
+    line-height: 24px;
+  }
+
+  .certification {
+    margin-top: 32px;
+  }
+  .pentest {
+    margin-left: 16px;
+
+
+    @media screen and (min-width: 1000px) {
+        text-align: center;
+    }
+
+    margin-bottom: 16px;
+   
+    font-size: 12px;
+    // color: rgb(129, 129, 237);
+    
+    margin-top: 32px;
+    // margin-bottom: 16px;
+    font-family: "Lucida Console", Arial, Helvetica, sans-serif;
+
+  }

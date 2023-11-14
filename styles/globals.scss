@@ -2,6 +2,7 @@
 @import "./fonts.scss";
 @import "./components/form-input.scss";
 @import "./components/stack.scss";
+@import "../components/pages/portfolio/portfolio-template.module.scss";
 
 body {
   line-height: 1;
@@ -44,10 +45,20 @@ summary::before {
   transition: transform 0.3s; /* Add a smooth transition for the arrow */
 }
 
+
+
 details[open] summary::before {
   transform: rotate(90deg); /* Rotate arrow for open state */
+}
+
+/* Hide default marker on mobile devices */
+@media (max-width: 768px) {
+  summary::-webkit-details-marker {
+      display: none;
+  }
 }
 
 details > p {
   margin-top: 0;
 }
+

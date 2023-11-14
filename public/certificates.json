@@ -1,0 +1,26 @@
+[
+  {
+    "title": "PNPT - Practical Network Penetration Tester",
+    "type": "certification",
+    "description": "The PNPT certification evaluates professional-level skills in external and internal network penetration testing through a 5-day assessment, followed by 2 days for report writing and includes tasks like OSINT, Active Directory exploitation, and a live 15-minute report debrief.",
+    "link": "https://www.credential.net/e92fe16b-be29-435e-a28c-df643a41a455"
+  },
+  {
+    "title": "CompTIA Security+",
+    "type": "certification",
+    "description": "Earners of the CompTIA Security+ certification have the knowledge and skills necessary to perform core security functions required of any cybersecurity role. CompTIA Security+ professionals know how to identify and address potential threats, attacks and vulnerabilities and they have established techniques in risk management, risk mitigation, threat management and intrusion detection.",
+    "link": "https://www.credly.com/badges/c9178bcc-44e3-4e66-963e-6d882e101a0c"
+  },
+  {
+    "title": "CompTIA CySA+",
+    "type": "certification",
+    "description": "Earners of the CompTIA Cybersecurity Analyst (CySA+) certification have the skills and knowledge to perform incident detection, prevention and response through continuous security monitoring. Includes analysis of indicators of malicious activity, threat hunting and threat intelligence concepts, appropriate tools and methods to manage, prioritize, and respond to attacks and vulnerabilities, performing incident response processes and understanding related reporting and communication concepts.",
+    "link": "https://www.credly.com/badges/f2fe7f7b-762d-4da0-8966-a6bfece351e0"
+  },
+  {
+    "title": "Microsoft Certified: Azure Fundamentals",
+    "type": "certification",
+    "description": "Earners of the Azure Fundamentals certification have demonstrated foundational level knowledge of cloud services and how those services are provided with Microsoft Azure.",
+    "link": "https://www.credly.com/badges/570c5d12-b85c-4836-b758-80e20fa7c778"
+  }
+]

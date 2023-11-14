@@ -6,7 +6,7 @@ class Slider extends React.Component {
     constructor (props) {
         super(props)
         this.state = {
-          menuOpen: false
+          isOpen: false
         }
     }
     showSettings(event) {
@@ -14,20 +14,21 @@ class Slider extends React.Component {
     }
 
     handleStateChange (state) {
-        this.setState({menuOpen: state.isOpen})  
+        this.setState({isOpen: state.isOpen})
     }
     
     closeMenu () {
-        this.setState({menuOpen: false})
+        this.setState({isOpen: false})
     }
 
-    toggleMenu () {
-        this.setState(state => ({menuOpen: !state.menuOpen}))
+    toggleMenu (state) {
+        this.setState({isOpen: !state.isOpen})
   }
     render() {
         return <Menu 
             {...this.props}
             onStateChange={(state) => this.handleStateChange(state)}
+            isOpen={this.state.isOpen}
         >
           <a onClick={() => this.closeMenu()} href={process.env.BLOG} className={styles.menuEntry}>
             News

@@ -6,7 +6,8 @@ export default (props) => {
     <div className={`form-input-title ${props.error && 'error'}`}>
       {props.required &&<span className="asterisk">*</span>} <span>{props.title}</span>
     </div>
-    {props.textarea ? <textarea className={`form-input-textarea`} {...props}/> : <input className={`form-input-input`} {...props}/>}
+    {props.textarea ? <textarea className={`form-input-textarea`} {...props}/> : props.label ? <label style={{marginLeft: "8px"}}><input className={`form-input-input`} {...props}/><span style={{marginLeft: "4px", cursor: "pointer"}}>{props.label}</span></label> : <input className={`form-input-input`} {...props}/> }
+    
     <div className="error error-data">
       {props.error}
     </div>
