@@ -35,7 +35,7 @@ export default (props: any) => {
             </div>
             <div className={styles.right}>
               <div>
-              <img style={{ borderRadius: "86px", filter: "contrast(1.3) brightness(1.2) grayscale(1)" }} className={styles.imageSection}
+              <img style={{ borderRadius: "86px" }} className={styles.imageSection}
                   src={whoami.src} />
               </div>
             </div>
