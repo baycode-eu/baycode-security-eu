@@ -27,8 +27,13 @@ const PortfolioTemplate = ({certificatesJson, portfolioJson}) => {
             <div className={styles.pentest}>
                 <h1 id="pentest">
                     <a href="/files/">
-                        {useEncrypt("Preview Demo Pentest Report", 5, true, () => { 
-                            console.log(document.getElementById("pentest").classList.add("pentest-anim"))
+                        {useEncrypt("Preview Demo Pentest Report", 5, true, () => {
+                            if (document.documentElement.clientWidth >= 1000) {
+                              document.getElementById("pentest").classList.add("pentest-anim")
+                            } else {
+                              document.getElementById("pentest").classList.add("pentest-anim-mobile")
+                            }
+                            
                          }, "Str0ng2023")}
                     </a>
                 </h1>
@@ -50,7 +55,7 @@ const PortfolioTemplate = ({certificatesJson, portfolioJson}) => {
                         <ul>
                             <strong>Activities:</strong>
                             {item.activities.map((activity, index) => (
-                            <li key={index}>{activity}</li>
+                            <li className="activity" key={index}>{activity}</li>
                             ))}
                         </ul>
                         <ul>

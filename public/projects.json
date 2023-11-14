@@ -22,8 +22,7 @@
     "activities": [
       "Developed a front site",
       "Developed a platform for administering the best restaurants in Warsaw",
-      "Built Backend core with authentication, reports, payments, and management features, as well as customer endpoints including payments and disputes.",
-      "Developed a custom administration panel in modern technologies.",
+      "Built backend core with authentication, reports, payments, and management features, as well as customer endpoints including payments and disputes.",
       "Created custom administration panels and front-end interfaces",
       "Developed a mobile application equivalent of the front site",
       "Contributed to business meetings, estimating, and analyzing needs"
@@ -127,6 +126,54 @@
     "hashtags": []
     },
     {
+      "id": 991,
+      "title": "Graph knowledgebase app",
+      "company": "Some company",
+      "description": "Created a graph db search, presentation, and knowledge base to research on cures for various diseases",
+      "technologies": ["Metaphactory", "GraphDB", "Neo4j", "RDF", "SPARQL", "React"],
+      "activities": ["Created a Graph DB Google-like search", "Made views presenting the relationships between RDF Subjects and Objects", "Made RDF queries based on imported data"],
+      "hashtags": []
+    },
+    {
+      "id": 992,
+      "title": "COBAS administration panel",
+      "company": "Some company",
+      "description": "Refactored a front-end administration panel to control COBAS biochemical machine",
+      "technologies": ["Electron"],
+      "activities": ["Refactored the existing Electron panel", "Implemented functionality for additional reports", "Implemented functionality for controling the COBAS machine"],
+      "hashtags": []
+    },
+    {
+      "id": 993,
+      "title": "Company resource index app",
+      "company": "Some company",
+      "description": "Scraping the existing company resources and creating a search based app",
+      "technologies": ["Next.js", "Apify", "Puppeteer", "Nest.js"],
+      "activities": ["Architecting the microservices", "Scraping the websites based on domains and existing data", "Creating a search frontend and backend app", "Created views for the web panel", "Created the data models", "Analyzed needs and helped estimate needs on team meetings"],
+      "hashtags": []
+    },
+    {
+      "id": 994,
+      "title": "Drug statistics visualisations",
+      "company": "Some company",
+      "description": "Supplied visualisations to existing drug research project",
+      "technologies": ["D3.js", "React"],
+      "activities": ["Created statistic based visualisations for drug research project"],
+      "hashtags": []
+    },
+    {
+      "id": "123",
+      "title": "BeforeYouGo",
+      "description": "Refactoring and creating reports for trip insurance app",
+      "technologies": ["Laravel", "Vue.js", "jQuery"],
+      "activities": [
+        "Refactored the backend app and reservations components on frontend.",
+        "Created reports to be generated and downloaded in administration panel"
+      ],
+      "company": "Liteweb",
+      "hashtags": []
+      },
+    {
     "id": "15",
     "title": "Liteweb website",
     "description": "Mentored a junior in creating his first commercial website.",
@@ -147,7 +194,7 @@
     {
       "id": "1",
       "title": "SilverCloud",
-      "description": "Created an internal C-suite app to extract information from CMS and make calculations on which products to focus on.",
+      "description": "Created an internal C-suite app for a Cyber Security company to extract information from CMS and make calculations on which products sell best and need to be focused on.",
       "technologies": ["Python"],
       "activities": ["Gathered the business requirements", "Extracted information from CMS API about selling, and made calculations based on several revenue, and cost based parameters", "Created, and saved the information into seperate database", "Presented the information"],
       "company": "SilverCloud",
@@ -168,7 +215,7 @@
       "description": "A shop for a company selling neons.",
       "technologies": ["Shopify"],
       "activities": ["Gathered the business requirements", "Developed and implemented an e-commerce platform for neon products"],
-      "company": "",
+      "company": "Zneonowani",
       "hashtags": []
     },
     {

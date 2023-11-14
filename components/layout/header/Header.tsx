@@ -17,9 +17,6 @@ const Header = (props: any) => {
           <a href={process.env.BLOG} className={styles.menuEntry}>
             News
           </a>
-          {/* <a href="/workshops" className={styles.menuEntry}>
-            Workshops
-          </a>       */}
           <a href="/#penetration-tests" className={styles.menuEntry}>
             Penetration Tests
           </a>

@@ -13,6 +13,10 @@
     font-family: "Lucida Console", Arial, Helvetica, sans-serif;
 }
 
+.activity {
+    margin-bottom: 16px;
+}
+
 @keyframes enlargeFont {
     0% {
         font-size: 24px;
@@ -25,11 +29,30 @@
     100% {
         font-size: 24px;
     }
-  }
+}
+
+@keyframes enlargeFontMobile {
+    0% {
+        font-size: 18px;
+      
+    }
+    50% {
+        font-size: 22px;
+      
+    }
+    100% {
+        font-size: 18px;
+    }
+}
   
   /* Apply the animation to an element with the class 'enlarge' */
   .pentest-anim {
     animation: enlargeFont 2s ease-in-out 2 forwards;
+    text-decoration: underline;
+  }
+
+  .pentest-anim-mobile {
+    animation: enlargeFontMobile 2s ease-in-out 2 forwards;
     text-decoration: underline;
   }
 

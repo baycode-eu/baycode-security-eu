@@ -39,6 +39,9 @@ class Slider extends React.Component {
           <a onClick={() => this.closeMenu()} href="/#software-engineering-section" className={styles.menuEntry}>
             Custom Software
           </a>
+          <a onClick={() => this.closeMenu()} href="/portfolio" className={styles.menuEntry}>
+            Browse portfolio
+          </a>
           <a onClick={() => this.closeMenu()} href="/quote" className={[styles.contact, styles.menuEntry].join(" ")}>
             Contact
           </a>
