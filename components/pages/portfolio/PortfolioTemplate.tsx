@@ -26,7 +26,7 @@ const PortfolioTemplate = ({certificatesJson, portfolioJson}) => {
         <div className={styles.portfolioTemplate}>
             <div className={styles.pentest}>
                 <h1 id="pentest">
-                    <a href="/files/">
+                    <a href="https://github.com/krystianbajno/pentest-demo/releases/download/v1.0/Baycode_Security-Demo_Corp-Findings_Report.pdf">
                         {useEncrypt("Preview Demo Pentest Report", 5, true, () => {
                             if (document.documentElement.clientWidth >= 1000) {
                               document.getElementById("pentest").classList.add("pentest-anim")
