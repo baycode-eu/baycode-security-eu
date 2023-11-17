@@ -34,7 +34,7 @@ const LandingPageView = (props: any) => {
         textQuoteDevelopment={""}
         getQuote={
           <>
-          <a href="https://github.com/krystianbajno/pentest-demo/releases/download/v1.0/Baycode_Security-Demo_Corp-Findings_Report.pdf">
+          <a href="http://baycode.eu/files/Baycode%20Security%20-%20Demo%20Corp%20-%20Findings%20Report.pdf">
             <Button primary>
               Preview Demo Pentest Report
             </Button>
@@ -84,7 +84,7 @@ const LandingPageView = (props: any) => {
     getPentest={<GetQuote
       textQuoteDevelopment={""}
       getQuote={
-        <a href="https://github.com/krystianbajno/pentest-demo/releases/download/v1.0/Baycode_Security-Demo_Corp-Findings_Report.pdf">
+        <a href="http://baycode.eu/files/Baycode%20Security%20-%20Demo%20Corp%20-%20Findings%20Report.pdf">
           <Button primary>
             Preview Demo Pentest Report
           </Button>
