@@ -15,7 +15,7 @@ const Quote = (props) => {
           <link rel="shortcut icon" href="favicon.svg" />
           <meta property="og:type" content="article" />
           <meta property="og:image" content={ogimage.src} />
-          <meta property="og:url" content="https://baycode.eu/quote" />
+          <meta property="og:url" content="https://baycode.eu/portfolio" />
           <meta name="twitter:card" content="summary_large_image" />
           <meta property="og:site_name" content="Baycode" />
           <meta name="twitter:image:alt" content="Baycode Logo" />
