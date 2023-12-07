@@ -23,7 +23,7 @@
       
     }
     50% {
-        font-size: 28px;
+        font-size: 25px;
       
     }
     100% {
@@ -47,7 +47,7 @@
   
   /* Apply the animation to an element with the class 'enlarge' */
   .pentest-anim {
-    animation: enlargeFont 2s ease-in-out 2 forwards;
+    animation: enlargeFont 2s ease-in-out 1 forwards;
     text-decoration: underline;
   }
 
