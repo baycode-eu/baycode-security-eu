@@ -8,7 +8,6 @@ import hacker from "public/hacker-3.png";
 import hackersuit from "public/hackersuit.png";
 import lockedKey from "public/lockedkey.png";
 import review from "public/review.png";
-import baycode2 from "public/baycode2.png";
 
 import pnpt from "public/pnpt.png";
 import securityplus from "public/securityplus.png";
@@ -136,14 +135,14 @@ const LandingPageView = (props: any) => {
     welcomePenetrationTest={
       <Card title={<h1># Security <C>Assessments</C></h1>}>
         <>
-        <h3>Cooperation</h3>
-        <p>Picture me utilizing cutting-edge tools and techniques to systematically identify vulnerabilities within your network, systems, and applications. My objective? Revealing hidden risks and delivering tailored, practical recommendations to enhance your security posture.</p>
-        <br/>
         <h3>Tailored Solutions</h3>
-        <p>No generic and automatic Nessus-and-goodbye scans here. I offer a range of services, from external and internal network testing to scrutinizing web applications, social engineering/phishing, and S-SDLC programmes. It's not just a service; it's a proactive strategy crafted exclusively for your needs.</p>
+        <p>I offer a range of services, from external and internal network testing to scrutinizing web applications, social engineering/phishing, and S-SDLC programmes as a proactive strategy crafted exclusively for your needs, so you can focus on what you do best.</p>
+        <br/>
+        <h3>Cooperation</h3>
+        <p>Picture me utilizing cutting-edge tools and techniques to systematically identify vulnerabilities within your network, systems, and applications in order to reveal hidden risks and deliver tailored, practical recommendations to enhance your security posture.</p>
         <br/>
         <h3>Let's Boost Your Cyber Armor</h3>
-        <p>Ready to enhance your organization's cyber defense? Take the first step by scheduling a call with me today.</p>
+        <p>Take the first step to enhance your organization's cyber defense by scheduling a call with me today.</p>
         </>
       </Card>
     }

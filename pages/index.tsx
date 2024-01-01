@@ -1,7 +1,6 @@
 import Head from 'next/head'
-import { Inter } from '@next/font/google'
 import LandingPageView from 'components/pages/landing-page/LandingPageView'
-import { Posts } from '../api/wordpress';
+import { Posts } from '../api/rss';
 import ogimage from "public/site_black.png";
 
 export default function Home(props) {
@@ -32,10 +31,11 @@ export default function Home(props) {
 
 export async function getServerSideProps() {
   let articles = []
+  
   try {
     articles = await Posts.getPosts()
-  } catch (e) {    
-  }
+  } catch (e) {}
+
   return {
     props: {
       articles

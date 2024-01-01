@@ -8,6 +8,7 @@ const nextConfig = {
   env: {
     BLOG: process.env.BLOG,
     WORDPRESS_API_URL: process.env.WORDPRESS_API_URL,
+    RSS_BLOG_API_URL: process.env.RSS_BLOG_API_URL,
     SOLUTIONS: process.env.SOLUTIONS,
     QUOTE_ENDPOINT_URL: process.env.QUOTE_ENDPOINT_URL,
     TELEGRAM_BOT_TOKEN: process.env.TELEGRAM_BOT_TOKEN,

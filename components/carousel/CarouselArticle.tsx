@@ -8,7 +8,7 @@ interface Props {
 
 export default ({article, onPress}: Props) => {
   return <a href={article.link}><div
-    className={`carousel-article ${!article.slug && 'locked'}`}
+    className={`carousel-article`}
     onClick={onPress}
   >
     <div className="image">
@@ -22,7 +22,7 @@ export default ({article, onPress}: Props) => {
         <h4>{article.title}</h4>
       </div>
       <div className="description">
-        <p>{article.shortDescription || article.description}</p>
+        <p>{article.description}</p>
       </div>
     </div>
   </div></a>

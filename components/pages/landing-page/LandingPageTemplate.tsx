@@ -23,10 +23,6 @@ export default (props: any) => {
 
   return <Layout hero={hero}>
     <div className="landing-page-template">
-
-      {/* <section className="blog-carousel" style={{marginTop: "32px"}}>
-          {blogCarousel}
-        </section> */}
       <FadeIn toLeft>
         <section id="landing-tiles" className={styles.landingTiles}>
           <div className={styles.textSection}>

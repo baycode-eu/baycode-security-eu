@@ -37,10 +37,6 @@ $min-height: 86vh;
   position: relative;
 }
 
-.white-section {
-  
-}
-
 #white-section-overlay {
   //background-color:rgb(136, 105, 198);
   background: linear-gradient(
@@ -52,7 +48,7 @@ $min-height: 86vh;
     transparent 100%  /* End color, adjust as needed */
   );
   position: absolute;
-  top: 1450px;
+  top: 1400px;
   width: 100%;
   z-index: -999;
   height: 900px;

@@ -26,6 +26,7 @@
     "lodash.debounce": "^4.0.8",
     "lottie-react": "^2.4.0",
     "next": "13.1.1",
+    "node-html-parser": "^6.1.12",
     "node-telegram-bot-api": "^0.64.0",
     "react": "18.2.0",
     "react-burger-menu": "^3.0.9",
@@ -44,6 +45,7 @@
     "tsparticles": "^2.7.1",
     "tsparticles-engine": "^2.7.1",
     "typescript": "4.9.4",
+    "xml-js": "^1.6.11",
     "yarn": "^1.22.19",
     "yup": "^0.32.11"
   }
