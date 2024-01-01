@@ -14,11 +14,14 @@ const Quote = (props) => {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="shortcut icon" href="favicon.svg" />
           <meta property="og:type" content="article" />
-          <meta property="og:image" content={ogimage.src} />
+          <meta property="og:image" content={"https://baycode.eu" + ogimage.src} />
+          <meta property="og:site_name" content="Baycode" />
           <meta property="og:url" content="https://baycode.eu/portfolio" />
           <meta name="twitter:card" content="summary_large_image" />
-          <meta property="og:site_name" content="Baycode" />
           <meta name="twitter:image:alt" content="Baycode Logo" />
+          <meta property="twitter:image" content={"https://baycode.eu" + ogimage.src}/>
+          <meta property="twitter:title" content="Baycode - Browse portfolio" />
+          <meta property="twitter:description" content="Browse portfolio - preview the work done by Baycode." />
         </Head>
         <main>
           {<PortfolioView/>}
