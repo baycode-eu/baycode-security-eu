@@ -47,7 +47,7 @@ const Quote = (props) => {
     return (
       <>
         <Head>
-          <title>Baycode - Get a quote</title>
+          <title>Baycode - Contact</title>
           <meta property="og:title" content="Baycode - Get a quote" />
           <meta name="description" content="Get a quote today and take the first step towards achieving your goals." />
           <meta property="og:description" content="Get a quote today and take the first step towards achieving your goals." />

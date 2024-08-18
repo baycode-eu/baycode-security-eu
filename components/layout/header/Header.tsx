@@ -24,7 +24,7 @@ const Header = (props: any) => {
             Custom Software
           </a>
           <a href="/quote" className={[styles.contact, styles.menuEntry].join(" ")}>
-            <span className={styles.hiddenBreak}><Button smol primary>Get a Quote</Button></span>
+            <span className={styles.hiddenBreak}><Button smol primary>Contact</Button></span>
           </a>
         </div>
     </div>   
