@@ -15,9 +15,8 @@ const QuoteView = ({formik}) => {
                     <div className={[styles.contactUs, styles.section].join(" ")}>
                         <h3 className={styles.contactUsHeadline}>Contact <C>me</C></h3>
                         <div className={styles.email}>
-                            <a href="mailto:info@baycode.eu"><FontAwesomeIcon width={32} icon={faEnvelope}/></a>
-                            <a href="mailto:info@baycode.eu">info@baycode.eu</a>
-                        </div>
+                           Please use the contact form to reach me.
+			</div>
                         <div>
                             <p>Feel free to use the secure contact form to reach me out instantly.</p><br/>
                             <h3>FAQ </h3><br/>
