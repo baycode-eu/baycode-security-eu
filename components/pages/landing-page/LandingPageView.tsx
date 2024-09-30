@@ -34,7 +34,7 @@ const LandingPageView = (props: any) => {
         textQuoteDevelopment={""}
         getQuote={
           <>
-          <a href="https://baycode.eu/files/Baycode%20Security%20-%20Demo%20Corp%20-%20Findings%20Report.pdf">
+          <a href="https://baycode.eu/quote">
             <Button primary>
               Preview Demo Pentest Report
             </Button>

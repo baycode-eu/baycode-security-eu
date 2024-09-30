@@ -69,7 +69,7 @@ export default (props: any) => {
               <div>
               {welcomePenetrationTest}
               <div style={{display: "flex", justifyContent:"center", marginTop: "32px", alignItems:"center"}}>
-                <a href="/quote" >
+                <a href="https://baycode.eu/files/Baycode%20Security%20-%20Demo%20Corp%20-%20Findings%20Report.pdf" >
                   <Button primary>
                     Preview Demo Pentest Report
                   </Button>
