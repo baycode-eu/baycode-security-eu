@@ -42,56 +42,51 @@ $min-height: 86vh;
   background: linear-gradient(
     -2deg,
     transparent 9.8%,  /* Middle color start, adjust as needed */
-    #0975C3 10%,  /* Middle color end, adjust as needed */
+    $primary 10%,  /* Middle color end, adjust as needed */
     #0975C3 89.8%,  /* End of middle color, adjust as needed */
     transparent 90%,  /* Start of last color, adjust as needed */
     transparent 100%  /* End color, adjust as needed */
   );
   position: absolute;
-  top: 1400px;
+  top: 1500px;
   width: 100%;
   z-index: -999;
   height: 900px;
 
   @media screen  and (min-width: 1200px) and (max-width: 1600px) { 
-    top:1500px;
+    top:1550px;
   }
 
   @media screen  and (min-width: 1000px) and (max-width: 1200px) { 
-    top:1450px;
+    top:1550px;
     height: 1200px;
   }
 
   @media screen  and (min-width: 800px) and (max-width: 1000px) { 
-    top:1850px;
+    top:1950px;
     height: 1600px;
   }
 
   @media screen  and (min-width: 600px) and (max-width: 800px) { 
-    top:1850px;
+    top:2000px;
     height: 1400px;
   }
 
-  @media screen  and (min-width: 530px) and (max-width: 650px) { 
-    top:1900px !important;
+  @media screen  and (min-width: 532px) and (max-width: 650px) { 
+    top:2000px !important;
     height: 1400px !important;
   }
 
-  @media screen  and (max-width: 530px) { 
-    top:1650px !important;
+  @media screen  and (max-width: 532px) { 
+    top:1850px !important;
     height: 1200px !important;
-  }
-
-  @media screen and (max-width: 600px) { 
-    top:1600px;
-    height: 1400px;
   }
 }
 
 .badges {
   display: flex;
   width: 100%;
-  margin-top: 32px;
+  margin-top: 48px;
   justify-content: space-evenly;
   align-items: center;
 }
@@ -108,7 +103,7 @@ $min-height: 86vh;
 }
 
 #software-engineering-section {
-  margin-top: 300px;
+  margin-top: 200px;
   margin-bottom: 200px;
   color: black;
 

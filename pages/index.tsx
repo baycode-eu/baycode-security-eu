@@ -7,21 +7,21 @@ export default function Home(props) {
   return (
     <>
       <Head>
-        <title>Baycode - Development, App Security - custom software, penetration tests</title>
-        <meta name="description" content="My name is Krystian Bajno, I'm a software developer and cyber security specialist (appsec, netsec). This little space on the web is where technology meets personality, and I'm thrilled to have you here. My domain covers full-stack software engineering as well as penetration tests and implementing S-SDLC programmes." />
+        <title>baycode.eu - Offensive Security, Penetration Tests, Custom Software, OSINT, CTI, DFIR</title>
+        <meta name="description" content="." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="shortcut icon" href="favicon.svg" />
-        <meta property="og:title" content="Baycode - Development, App Security - custom software, penetration tests" />
+        <meta property="og:title" content="Baycode - Offensive Security, Penetration Tests, Custom Software, OSINT, CTI, DFIR" />
         <meta property="og:type" content="article" />
         <meta property="og:image" content={"https://baycode.eu" + ogimage.src} />
         <meta property="og:url" content="https://baycode.eu" />
-        <meta property="og:description" content="My name is Krystian Bajno, I'm a software developer and cyber security specialist (appsec, netsec). This little space on the web is where technology meets personality, and I'm thrilled to have you here. My domain covers full-stack software engineering as well as penetration tests and implementing S-SDLC programmes." />
+        <meta property="og:description" content="Baycode - Offensive Security, Penetration Tests, Custom Software, OSINT, CTI, DFIR" />
         <meta property="og:site_name" content="Baycode" />
         <meta name="twitter:image:alt" content="Baycode Logo" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:image" content={"https://baycode.eu" + ogimage.src}/>
-        <meta property="twitter:title" content="Baycode - Development, App Security - custom software, penetration tests" />
-        <meta property="twitter:description" content="My name is Krystian Bajno, I'm a software developer and cyber security specialist (appsec, netsec). This little space on the web is where technology meets personality, and I'm thrilled to have you here. My domain covers full-stack software engineering as well as penetration tests and implementing S-SDLC programmes." />
+        <meta property="twitter:title" content="Baycode - Offensive Security, Penetration Tests, Custom Software, OSINT, CTI, DFIR" />
+        <meta property="twitter:description" content="Baycode - Offensive Security, Penetration Tests, Custom Software, CTI, OSINT, DFIR" />
       </Head>
       <main>
         <LandingPageView

@@ -3,7 +3,7 @@ import Layout from "components/layout/layout";
 import styles from "./landing-page-template.module.scss";
 import FadeIn from "../../animations/FadeIn"
 import Stack from "components/tools/Stack";
-import whoami from "public/whoami.jpg";
+import whoami from "public/whoami.png";
 import { Button } from "components/ui/atoms/button/Button";
 
 export default (props: any) => {

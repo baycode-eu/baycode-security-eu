@@ -12,9 +12,12 @@ export default (props: any) => (
       <li className={`${styles.threatsout}`}>{props.subtitle}</li>
     </ul>
     <ul className={styles.domain}>
-      <li>💻 Custom Software</li>
-      <li>🛡️ Application Security</li>
-      <li>🔍 Penetration Tests</li>
+      <li>Penetration Tests</li>
+      <li>Adversary Emulation</li>
+      <li>Incident Response</li>
+      <li>Cyber Threat Intelligence</li>
+      <li>Vulnerability Research</li>
+      <li>Custom Software</li>
       {/* <li>📱 App Security Testing</li> */}
       {/* <li>🛡️ SOAR</li> */}
       {/* <li>🎓 Workshops</li> */}

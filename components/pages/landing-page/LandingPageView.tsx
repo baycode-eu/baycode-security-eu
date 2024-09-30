@@ -19,6 +19,7 @@ import cyberAnimData from "public/cyber.json";
 import Lottie from "lottie-react";
 import LandingPageTemplate from "./LandingPageTemplate";
 import stackData from "public/stack.json"
+import styles from "./landing-page-view.module.scss"
 
 const LandingPageView = (props: any) => {
   return <>
@@ -27,8 +28,8 @@ const LandingPageView = (props: any) => {
   </div>
   <LandingPageTemplate
     hero={<Hero
-      title={"Development,"}
-      subtitle={"App Security"}
+      title={"Software Development,"}
+      subtitle={"Offensive Security"}
       getQuote={<GetQuote
         textQuoteDevelopment={""}
         getQuote={
@@ -107,11 +108,25 @@ const LandingPageView = (props: any) => {
 
     welcomeBaycode={
       <Card
-        title={<h1># Who <C>am I</C></h1>}
+        title={<h1># Services</h1>}
       >
-          <><p>My name is Krystian Bajno, I'm a software developer and cyber security specialist (appsec, netsec). This little space on the web is where technology meets personality, and I'm thrilled to have you here.</p><br/>
-          <p>My domain covers full-stack software engineering as well as penetration tests and implementing S-SDLC programmes.</p><br/>
-          <a href='/portfolio'><Button primary>Browse portfolio</Button></a><a style={{marginLeft: "16px"}} href="/quote" ><Button primary>Contact</Button></a>
+          <>
+          <div style={{marginBottom: "32px"}}>
+            <p>We specialize in full-stack software development, external and internal penetration testing, and advanced red team operations.</p>
+            <p style={{marginTop: "32px"}}>Our mission is to uncover threats, and provide tailored recommendations to enhance your cybersecurity posture.</p>
+            <p style={{marginTop: "32px"}}>The solutions are tailored specifically for you needs, so you can focus only on what you do best.</p>
+          </div>
+          <a href='/portfolio'>
+            <Button primary>Browse portfolio</Button>
+          </a>
+          <a style={{marginLeft: "16px"}} href="/quote" >
+            <Button primary>Contact</Button>
+          </a>
+          <a className={styles.hideMobile} style={{marginLeft: "16px"}} href="https://github.com/krystianbajno">
+            <Button primary>
+              Visit GitHub
+            </Button>
+          </a>
           <div className={"badges"}>
               <img alt={"none"} 
                   src={pnpt.src} 
@@ -136,13 +151,13 @@ const LandingPageView = (props: any) => {
       <Card title={<h1># Security <C>Assessments</C></h1>}>
         <>
         <h3>Tailored Solutions</h3>
-        <p>I offer a range of services, from external and internal network testing to scrutinizing web applications, social engineering/phishing, and S-SDLC programmes as a proactive strategy crafted exclusively for your needs, so you can focus on what you do best.</p>
+        <p>We offer a range of services, from external and internal penetration testing to scrutinizing web applications, social engineering/phishing, OSINT, CTI, and S-SDLC programmes as a proactive strategy crafted exclusively for your needs, so you can focus on what you do best.</p>
         <br/>
         <h3>Cooperation</h3>
-        <p>Picture me utilizing cutting-edge tools and techniques to systematically identify vulnerabilities within your network, systems, and applications in order to reveal hidden risks and deliver tailored, practical recommendations to enhance your security posture.</p>
+        <p>We utilize cutting-edge tools and techniques to systematically identify vulnerabilities within your network, systems, and applications in order to reveal hidden risks and deliver tailored, practical recommendations to enhance your security posture.</p>
         <br/>
         <h3>Let's Boost Your Cyber Armor</h3>
-        <p>Take the first step to enhance your organization's cyber defense by scheduling a call with me today.</p>
+        <p>Take the first step to enhance your organization's cyber defense by scheduling a call with us today.</p>
         </>
       </Card>
     }
@@ -152,11 +167,11 @@ const LandingPageView = (props: any) => {
         title={<h1># Custom Software</h1>}
       ><>
         <br/><h3>APIs that Speak Your Language</h3>
-        <p>Need to architect and create a backend solution? I've got you covered. API development is my playground, no matter if in the serverless cloud and including cozy spots on Microsoft Azure, or microservices or monolith applications.</p>
+        <p>Need to architect and create a backend solution? We've got you covered. API development is my playground, no matter if in the serverless cloud and including cozy spots on Microsoft Azure, or microservices or monolith applications.</p>
         <br/><h3>Apps that look and work great</h3>
-        <p>I love crafting mobile and frontend apps that not only look fantastic but also work seamlessly. A perfect blend of pixel perfect style and UX functionality for your digital needs.</p><br/>
+        <p>We love crafting mobile and frontend apps that not only look fantastic but also work seamlessly. A perfect blend of pixel perfect style and UX functionality for your digital needs.</p><br/>
         <h3>Project management</h3>
-        <p>I specialize in agile development, where sprints meet big results. Think Scrum and Kanban.</p>
+        <p>We specialize in agile development, where sprints meet big results. Think Scrum and Kanban.</p>
       </></Card>  
     }
 /></>}

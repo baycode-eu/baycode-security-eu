@@ -8,7 +8,6 @@ $max-dynamic-width: 1640px;
   margin-top: 8px;
   color: black;
   text-shadow: 2px 2px black;
-  text-align: end;
 }
 
 .quote {
@@ -30,7 +29,6 @@ $max-dynamic-width: 1640px;
   justify-content:center;
   align-items: center;
   text-align:center;
-  word-wrap:break-word;
 
   & > .title {
     color: white;
@@ -72,6 +70,7 @@ $max-dynamic-width: 1640px;
 
     & > li {
       padding: 12px;
+      margin: 2px;
     }
   }
 }
