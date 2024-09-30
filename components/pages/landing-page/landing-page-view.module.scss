@@ -1,5 +1,51 @@
+@import 'styles/colors';
+
 .hideMobile {
     @media screen and (max-width: 500px) {
         display: none;
     }
 }
+
+  .gridItem {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 32px;
+    font-size: 1rem;
+
+    h3 {
+        font-size: 1.5rem;
+        color: $primary;
+        margin-bottom: 8px;
+    }
+  }
+
+  .gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .cta {
+    grid-column: span 3;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  @media (max-width: 900px) {
+    .gridContainer {
+      grid-template-columns: 1fr 1fr;
+    }
+    .cta {
+      grid-column: span 2;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .gridContainer {
+      grid-template-columns: 1fr;
+    }
+    .cta {
+      grid-column: span 1;
+    }
+  }

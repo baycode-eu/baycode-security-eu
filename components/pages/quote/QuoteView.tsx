@@ -6,6 +6,7 @@ import C from "components/ui/atoms/ColorText";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/fontawesome-free-solid'
 import FadeIn from "components/animations/FadeIn";
+import { Button } from "components/ui/atoms/button/Button";
 
 const QuoteView = ({formik}) => {
     return <Layout pageAlternative>
@@ -13,7 +14,7 @@ const QuoteView = ({formik}) => {
             <div className={[styles.quoteView, ].join(' ')}>
                 <div className={styles.quote}>
                     <div className={[styles.contactUs, styles.section].join(" ")}>
-                        <h3 className={styles.contactUsHeadline}>Contact <C>me</C></h3>
+                        <h3 className={styles.contactUsHeadline}>Contact <C>us</C></h3>
                         <div className={styles.email}>
                            Contact Form
 			            </div>
@@ -24,6 +25,18 @@ const QuoteView = ({formik}) => {
                             <p>Please provide your email address. If you prefer an alternative channel, include the contact information in the Full Name field with a dummy email for a prompt response. I made this field required so you do not forget to fill in the information I will use to contact you back.</p><br/>
                             <p>Thanks for reaching out! :) </p><br/>
                             <p><b>Now that you have all this information, feel free to try the contact form!</b></p>
+                        </div>
+                        <div style={{marginTop: "32px"}}>
+                            <a style={{marginRight: "32px"}} href="https://github.com/krystianbajno">
+                                <Button smol primary>
+                                    Visit GitHub
+                                </Button>
+                            </a>
+                            <a href="https://www.linkedin.com/in/krystianbajno">
+                                <Button smol primary>
+                                    Visit LinkedIn
+                                </Button>
+                            </a>
                         </div>
                     </div>
                     <div className={[styles.form, styles.section].join(" ")}>

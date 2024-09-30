@@ -2,7 +2,8 @@
 $prussian-blue: #1d3557; //white text
 $blue: #4bd2f7;
 $honeydew: #f1faee; // black text
-$imperial-red: #e63946; // white text
+$imperial-red: rgb(164, 24, 24);
+$dark-red: rgb(128, 10, 10);    /* Darker, intense red */
 
 $purple: #0008f2ff;
 $gamboge: #0080e3ff;
@@ -10,7 +11,7 @@ $white: #fafafa;
 $black: #0a0a0a;
 
 // main
-$primary:  $gamboge;
+$primary: rgb(202, 6, 6);
 $secondary:rgb(52, 138, 204);
 $accent: rgb(52, 138, 204);  // rgb(249, 117, 22);
 

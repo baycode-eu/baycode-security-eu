@@ -14,7 +14,7 @@ export default (props: any) => (
     <ul className={styles.domain}>
       <li>Penetration Tests</li>
       <li>Adversary Emulation</li>
-      <li>Incident Response</li>
+      <li>Digital Forensics</li>
       <li>Cyber Threat Intelligence</li>
       <li>Vulnerability Research</li>
       <li>Custom Software</li>

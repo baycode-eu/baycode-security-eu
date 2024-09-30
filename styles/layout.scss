@@ -42,8 +42,8 @@ $min-height: 86vh;
   background: linear-gradient(
     -2deg,
     transparent 9.8%,  /* Middle color start, adjust as needed */
-    $primary 10%,  /* Middle color end, adjust as needed */
-    #0975C3 89.8%,  /* End of middle color, adjust as needed */
+    rgb(164, 24, 24) 10%,  /* Middle color end, adjust as needed */
+    rgb(189, 24, 24) 89.8%,  /* End of middle color, adjust as needed */
     transparent 90%,  /* Start of last color, adjust as needed */
     transparent 100%  /* End color, adjust as needed */
   );

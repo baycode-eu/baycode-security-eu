@@ -6,20 +6,21 @@
     filter: brightness(120%);
   }
 
+
   z-index: 1000;
   border: none;
   // neumorphism
   border-radius: 8px;
   background: $white;
-  box-shadow: $primary 0px 0px 4px;
+  box-shadow: $imperial-red 0px 0px 4px;
   min-width: 48px;
   min-height: 48px;
   font-size: 19px;
-  font-weight: 400;
+  font-weight: 800;
+  text-shadow: 1px 1px black;
   letter-spacing: 0.5px;
   padding: 14px;
   font-family:Poppins; 
-  color: $white-alternative-text;
   z-index: 1;
   cursor: pointer;
 
@@ -35,13 +36,13 @@
   }
 
   &.accent {
-    color: $white-alternative;
+    color: black;
     // neumorphism
     background: $accent;
   }
 
   &.primary {
-    color: white;
+    color: black;
     background: $primary;
   }
 

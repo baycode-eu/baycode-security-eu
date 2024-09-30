@@ -1,5 +1,7 @@
 import React from 'react'
 
+import styles from "./color-text.module.scss"
+
 export default (props: any) => {
-  return <span style={{color: "#0080e3ff"}}>{props.children}</span>
+  return <span className={styles.span}>{props.children}</span>
 } 

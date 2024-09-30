@@ -34,7 +34,7 @@ class Slider extends React.Component {
             News
           </a>
           <a onClick={() => this.closeMenu()} href="/#penetration-tests" className={styles.menuEntry}>
-            Penetration Testing
+            Security Services
           </a>
           <a onClick={() => this.closeMenu()} href="/#software-engineering-section" className={styles.menuEntry}>
             Custom Software

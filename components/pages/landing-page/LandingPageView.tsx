@@ -44,16 +44,17 @@ const LandingPageView = (props: any) => {
       onQuote={props.redirectToQuote}
     />}
     getSocial={
-        <><a style={{marginRight: "32px"}} href="https://github.com/krystianbajno">
-          <Button primary>
-            Visit GitHub
-          </Button>
-        </a>
-        <a href="https://www.linkedin.com/in/krystianbajno">
-          <Button primary>
-            Visit LinkedIn
-          </Button>
-        </a>
+      <>
+          <a style={{marginRight: "32px"}} href="https://github.com/krystianbajno">
+            <Button primary>
+              Visit GitHub
+            </Button>
+          </a>
+          <a href="https://www.linkedin.com/in/krystianbajno">
+            <Button primary>
+              Visit LinkedIn
+            </Button>
+          </a>
       </>
     }
     blogCarousel={<BlogCarousel articles={props.articles}/>}
@@ -85,9 +86,7 @@ const LandingPageView = (props: any) => {
       textQuoteDevelopment={""}
       getQuote={
         <a href="https://baycode.eu/files/Baycode%20Security%20-%20Demo%20Corp%20-%20Findings%20Report.pdf">
-          <Button primary>
-            Preview Demo Pentest Report
-          </Button>
+          <Button primary>Schedule a call</Button>
         </a>
       }
     />}
@@ -149,16 +148,41 @@ const LandingPageView = (props: any) => {
 
     welcomePenetrationTest={
       <Card title={<h1># Security <C>Assessments</C></h1>}>
-        <>
-        <h3>Tailored Solutions</h3>
-        <p>We offer a range of services, from external and internal penetration testing to scrutinizing web applications, social engineering/phishing, OSINT, CTI, and S-SDLC programmes as a proactive strategy crafted exclusively for your needs, so you can focus on what you do best.</p>
-        <br/>
-        <h3>Cooperation</h3>
-        <p>We utilize cutting-edge tools and techniques to systematically identify vulnerabilities within your network, systems, and applications in order to reveal hidden risks and deliver tailored, practical recommendations to enhance your security posture.</p>
-        <br/>
-        <h3>Let's Boost Your Cyber Armor</h3>
-        <p>Take the first step to enhance your organization's cyber defense by scheduling a call with us today.</p>
-        </>
+<>
+<div className={styles.gridContainer}>
+    <div className={styles.gridItem}>
+        <h3>Penetration Tests</h3>
+        <p>Our external and internal penetration tests assess your systems and networks for vulnerabilities that attackers could exploit. We simulate real-world scenarios to provide actionable insights on improving your defenses.</p>
+    </div>
+
+    <div className={styles.gridItem}>
+        <h3>Adversary Emulation</h3>
+        <p>We mimic sophisticated adversary tactics, techniques, and procedures (TTPs) to evaluate how well your security measures stand against advanced threats, ensuring robust preparedness.</p>
+    </div>
+
+    <div className={styles.gridItem}>
+        <h3>Digital Forensics</h3>
+        <p>In the event of a cyber attack, we investigate the breach, performing in-depth digital forensics to trace the source, analyze the attack methods, and gather evidence. We reverse engineer malware and work to provide post-incident analysis to prevent future incidents.</p>
+    </div>
+
+    <div className={styles.gridItem}>
+        <h3>Cyber Threat Intelligence (CTI)</h3>
+        <p>Our CTI service provides real-time insights into emerging threats and vulnerabilities, helping you stay one step ahead of potential attackers with actionable intelligence tailored to your environment.</p>
+    </div>
+
+    <div className={styles.gridItem}>
+        <h3>Vulnerability Research</h3>
+        <p>We conduct in-depth research to uncover and analyze vulnerabilities in your systems and applications, enabling you to proactively mitigate risks before they can be exploited by malicious actors.</p>
+    </div>
+
+    <div className={styles.gridItem}>
+        <h3>Custom Software</h3>
+        <p>We develop security tools and software tailored to your specific requirements, helping you stay ahead of cyber threats with solutions designed to fit your operational needs.</p>
+    </div>
+
+</div>
+</>
+
       </Card>
     }
 

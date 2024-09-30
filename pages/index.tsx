@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import LandingPageView from 'components/pages/landing-page/LandingPageView'
 import { Posts } from '../api/rss';
-import ogimage from "public/site_black.png";
+import ogimage from "public/whoami.png";
 
 export default function Home(props) {
   return (

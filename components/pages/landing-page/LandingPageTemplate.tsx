@@ -10,7 +10,7 @@ export default (props: any) => {
   const {
     welcomeBaycode,
     welcomePenetrationTest,
-    welcomePenetrationTestImage,
+    // welcomePenetrationTestImage,
     hero,
     getPentest,
     getSocial,
@@ -68,22 +68,30 @@ export default (props: any) => {
             <div className={styles.left}>
               <div>
               {welcomePenetrationTest}
-              <div style={{display: "flex", justifyContent:"center", marginTop: "32px", alignItems:"center"}}><a  href="/quote" >
-                <Button primary>Schedule a call</Button>
-               </a></div>
+              <div style={{display: "flex", justifyContent:"center", marginTop: "32px", alignItems:"center"}}>
+                <a href="/quote" >
+                  <Button primary>
+                    Preview Demo Pentest Report
+                  </Button>
+                </a>
+               </div>
               
               </div>
            
             </div>
-            <div className={styles.right}>
+            {/* <div className={styles.right}>
               <div style={{maxWidth: "650px" }}>
                 {welcomePenetrationTestImage} 
               </div>
-            </div>
+            </div> */}
           </div>
         </section>
       </FadeIn>
-      <section className={styles["get-a-quote"]}>
+      <div className={styles.cta}>
+        <h3>Let's Boost Your Cyber Armor</h3>
+        <p>Let us strengthen your security posture and protect your valuable assets.</p>
+    </div>
+      <section style={{marginTop: "56px"}} className={styles["get-a-quote"]}>
         {getPentest} 
       </section>
       

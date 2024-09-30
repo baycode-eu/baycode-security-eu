@@ -18,7 +18,7 @@ const Header = (props: any) => {
             News
           </a>
           <a href="/#penetration-tests" className={styles.menuEntry}>
-            Penetration Tests
+            Security Services
           </a>
           <a href='/#software-engineering-section' className={styles.menuEntry}>
             Custom Software
