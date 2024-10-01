@@ -122,13 +122,17 @@ const LandingPageView = (props: any) => {
               </a>
             </div>
           
-            <div style={{marginRight: "16px", marginBottom: "16px"}} href="/quote" >
-              <Button primary>Contact</Button>
+            <div style={{marginRight: "16px", marginBottom: "16px"}}  >
+              <a href="/quote">
+                <Button primary>Contact</Button>
+              </a>
             </div>
-            <div className={styles.hideMobile} href="https://github.com/krystianbajno">
-              <Button primary>
-                Visit GitHub
-              </Button>
+            <div className={styles.hideMobile}>
+              <a href="https://github.com/krystianbajno">
+                <Button primary>
+                  Visit GitHub
+                </Button>
+              </a>
             </div>
           </div>
 
