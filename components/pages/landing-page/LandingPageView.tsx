@@ -115,17 +115,23 @@ const LandingPageView = (props: any) => {
             <p style={{marginTop: "32px"}}>Our mission is to uncover threats, and provide tailored recommendations to enhance your cybersecurity posture.</p>
             <p style={{marginTop: "32px"}}>The solutions are tailored specifically for you needs, so you can focus only on what you do best.</p>
           </div>
-          <a href='/portfolio'>
-            <Button primary>Browse portfolio</Button>
-          </a>
-          <a style={{marginLeft: "16px"}} href="/quote" >
-            <Button primary>Contact</Button>
-          </a>
-          <a className={styles.hideMobile} style={{marginLeft: "16px"}} href="https://github.com/krystianbajno">
-            <Button primary>
-              Visit GitHub
-            </Button>
-          </a>
+          <div style={{display: "flex"}}>
+            <div style={{marginRight: "16px", marginBottom: "16px"}} >
+              <a href='/portfolio'>
+                <Button primary>Browse portfolio</Button>
+              </a>
+            </div>
+          
+            <div style={{marginRight: "16px", marginBottom: "16px"}} href="/quote" >
+              <Button primary>Contact</Button>
+            </div>
+            <div className={styles.hideMobile} href="https://github.com/krystianbajno">
+              <Button primary>
+                Visit GitHub
+              </Button>
+            </div>
+          </div>
+
           <div className={"badges"}>
               <img alt={"none"} 
                   src={pnpt.src} 
