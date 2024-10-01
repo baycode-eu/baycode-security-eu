@@ -26,17 +26,23 @@ const QuoteView = ({formik}) => {
                             <p>Thanks for reaching out! :) </p><br/>
                             <p><b>Now that you have all this information, feel free to try the contact form!</b></p>
                         </div>
-                        <div style={{marginTop: "32px"}}>
-                            <a style={{marginRight: "32px"}} href="https://github.com/krystianbajno">
-                                <Button smol primary>
-                                    Visit GitHub
-                                </Button>
-                            </a>
-                            <a href="https://www.linkedin.com/in/krystianbajno">
-                                <Button smol primary>
-                                    Visit LinkedIn
-                                </Button>
-                            </a>
+                        <div style={{marginTop: "16px", display: "flex"}}>
+                            <div style={{marginRight: "32px", marginTop: "32px"}} >
+                                <a href="https://github.com/krystianbajno">
+                                    <Button smol primary>
+                                        Visit GitHub
+                                    </Button>
+                                </a>
+                            </div>
+                            
+                            <div style={{marginRight: "32pxm", marginTop: "32px"}} >
+                                <a href="https://www.linkedin.com/in/krystianbajno">
+                                    <Button smol primary>
+                                        Visit LinkedIn
+                                    </Button>
+                                </a>
+                            </div>
+
                         </div>
                     </div>
                     <div className={[styles.form, styles.section].join(" ")}>
